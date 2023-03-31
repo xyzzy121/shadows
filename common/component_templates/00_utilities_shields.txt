@@ -26,9 +26,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_S1 #Regeneration per day
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_1" }
 	component_set = "SHIELD_1"
@@ -56,9 +54,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_M1 #Regeneration per day
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_shields_1" }
 	component_set = "SHIELD_1"
@@ -82,9 +78,7 @@ utility_component_template = {
 		}
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	modifier = {
 		ship_shield_add = @shield_L1
@@ -117,9 +111,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_S2 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_2" }
 	component_set = "SHIELD_2"
@@ -147,9 +139,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_M2 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_2" }
 	component_set = "SHIELD_2"
@@ -177,9 +167,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_L2 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_2" }
 	component_set = "SHIELD_2"
@@ -208,9 +196,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_S3 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_3" }
 	component_set = "SHIELD_3"
@@ -238,9 +224,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_M3 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_3" }
 	component_set = "SHIELD_3"
@@ -268,9 +252,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_L3 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_3" }
 	component_set = "SHIELD_3"
@@ -300,9 +282,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_S4 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_4" }
 	component_set = "SHIELD_4"
@@ -339,9 +319,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_M4 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_4" }
 	component_set = "SHIELD_4"
@@ -378,9 +356,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_L4 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_4" }
 	component_set = "SHIELD_4"
@@ -418,9 +394,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_S5 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_5" }
 	upgrades_to = "SMALL_DARK_MATTER_DEFLECTOR"
@@ -457,9 +431,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_M5 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_5" }
 	upgrades_to = "MEDIUM_DARK_MATTER_DEFLECTOR"
@@ -496,9 +468,7 @@ utility_component_template = {
 		ship_shield_regen_add_static = @regen_L5 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_shields_5" }
 	upgrades_to = "LARGE_DARK_MATTER_DEFLECTOR"
@@ -523,7 +493,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_dark_matter_shield"
 	icon_frame = 1
-	power = @power_S6
+	power = -1000
 	resources = {
 		category = ship_components
 		cost = {
@@ -536,19 +506,17 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_shield_add = @shield_S6
-		ship_shield_regen_add_static = @regen_S6 #Regeneration per day
+		ship_shield_add = 10000
+		ship_shield_regen_add_static = 1000 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_deflector" }
 	component_set = "DARK_MATTER_DEFLECTOR"
 
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
 			factor = 0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -574,19 +542,17 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_shield_add = @shield_M6
-		ship_shield_regen_add_static = @regen_M6 #Regeneration per day
+		ship_shield_add = 100000
+		ship_shield_regen_add_static = 1000 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_deflector" }
 	component_set = "DARK_MATTER_DEFLECTOR"
 
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -612,19 +578,17 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_shield_add = @shield_L6
-		ship_shield_regen_add_static = @regen_L6 #Regeneration per day
+		ship_shield_add = 1000000
+		ship_shield_regen_add_static = 1000 #Regeneration per day
 	}
 		
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_deflector" }
 	component_set = "DARK_MATTER_DEFLECTOR"
 
 	ai_weight = {
-		weight = 1
+		weight = 0
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }

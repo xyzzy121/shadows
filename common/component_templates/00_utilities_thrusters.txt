@@ -95,9 +95,7 @@ utility_component_template = {
 	modifier = {
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_1" }
 	component_set = "thruster_components"
@@ -125,9 +123,7 @@ utility_component_template = {
 	modifier = {
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_1" }
 	component_set = "thruster_components"
@@ -155,9 +151,7 @@ utility_component_template = {
 	modifier = {
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_1" }
 	component_set = "thruster_components"
@@ -185,9 +179,7 @@ utility_component_template = {
 	modifier = {
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_1" }
 	component_set = "thruster_components"
@@ -215,9 +207,7 @@ utility_component_template = {
 	modifier = {
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_1" }
 	component_set = "thruster_components"
@@ -245,9 +235,7 @@ utility_component_template = {
 	modifier = {
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_1" }
 	component_set = "thruster_components"
@@ -278,9 +266,7 @@ utility_component_template = {
 		ship_evasion_add = 5
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_2" }
 	component_set = "thruster_components"
@@ -310,9 +296,7 @@ utility_component_template = {
 		ship_evasion_add = 4
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_2" }
 	component_set = "thruster_components"
@@ -342,9 +326,7 @@ utility_component_template = {
 		ship_evasion_add = 3
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_2" }
 	component_set = "thruster_components"
@@ -374,9 +356,7 @@ utility_component_template = {
 		ship_evasion_add = 2
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_2" }
 	component_set = "thruster_components"
@@ -406,9 +386,7 @@ utility_component_template = {
 		ship_evasion_add = 1
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_2" }
 	component_set = "thruster_components"
@@ -437,9 +415,7 @@ utility_component_template = {
 		ship_base_speed_mult = 0.25
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_2" }
 	component_set = "thruster_components"
@@ -471,9 +447,7 @@ utility_component_template = {
 		ship_evasion_add = 10
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_3" }
 	component_set = "thruster_components"
@@ -502,9 +476,7 @@ utility_component_template = {
 		ship_evasion_add = 8
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_3" }
 	component_set = "thruster_components"
@@ -533,9 +505,7 @@ utility_component_template = {
 		ship_evasion_add = 6
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_3" }
 	component_set = "thruster_components"
@@ -564,9 +534,7 @@ utility_component_template = {
 		ship_evasion_add = 4
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_3" }
 	component_set = "thruster_components"
@@ -595,9 +563,7 @@ utility_component_template = {
 		ship_evasion_add = 2
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_3" }
 	component_set = "thruster_components"
@@ -625,9 +591,7 @@ utility_component_template = {
 		ship_base_speed_mult = 0.50
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_3" }
 	component_set = "thruster_components"
@@ -658,9 +622,7 @@ utility_component_template = {
 		ship_evasion_add = 15
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_4" }
 	component_set = "thruster_components"
@@ -689,9 +651,7 @@ utility_component_template = {
 		ship_evasion_add = 12
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_4" }
 	component_set = "thruster_components"
@@ -720,9 +680,7 @@ utility_component_template = {
 		ship_evasion_add = 9
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_4" }
 	component_set = "thruster_components"
@@ -751,9 +709,7 @@ utility_component_template = {
 		ship_evasion_add = 6
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_4" }
 	component_set = "thruster_components"
@@ -782,9 +738,7 @@ utility_component_template = {
 		ship_evasion_add = 3
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_4" }
 	component_set = "thruster_components"
@@ -813,9 +767,7 @@ utility_component_template = {
 		ship_base_speed_mult = 0.75
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_thrusters_4" }
 	component_set = "thruster_components"
@@ -847,9 +799,7 @@ utility_component_template = {
 		ship_evasion_add = 20
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_dark_matter_propulsion" }
 	component_set = "thruster_components"
@@ -886,9 +836,7 @@ utility_component_template = {
 		ship_evasion_add = 16
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_dark_matter_propulsion" }
 	component_set = "thruster_components"
@@ -925,9 +873,7 @@ utility_component_template = {
 		ship_evasion_add = 12
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_dark_matter_propulsion" }
 	component_set = "thruster_components"
@@ -964,9 +910,7 @@ utility_component_template = {
 		ship_evasion_add = 8
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_dark_matter_propulsion" }
 	component_set = "thruster_components"
@@ -1003,9 +947,7 @@ utility_component_template = {
 		ship_evasion_add = 4
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_dark_matter_propulsion" }
 	component_set = "thruster_components"
@@ -1042,9 +984,7 @@ utility_component_template = {
 		ship_base_speed_mult = 1.25
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	prerequisites = { "tech_dark_matter_propulsion" }
 	component_set = "thruster_components"

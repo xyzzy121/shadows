@@ -60,9 +60,7 @@ strike_craft_component_template = {
 	ai_tags = { weapon_role_point_defense carrier }
 	point_defence_targets = { "strike_craft" }
 			
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 }
 
@@ -121,9 +119,7 @@ strike_craft_component_template = {
 	ai_tags = { weapon_role_point_defense carrier}
 	point_defence_targets = { "strike_craft" }
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 }
 
@@ -182,9 +178,7 @@ strike_craft_component_template = {
 	ai_tags = { weapon_role_point_defense carrier }
 	point_defence_targets = { "strike_craft" }
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 }
 
@@ -242,8 +236,6 @@ strike_craft_component_template = {
 	ai_tags = { weapon_role_point_defense carrier }
 	point_defence_targets = { "strike_craft" }
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 }

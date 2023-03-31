@@ -50,9 +50,7 @@ utility_component_template = {
 		weight = 1
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "tech_hyper_drive_1" }
@@ -82,9 +80,7 @@ utility_component_template = {
 		weight = 2
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "tech_hyper_drive_2" }
@@ -114,9 +110,7 @@ utility_component_template = {
 		weight = 3
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "tech_hyper_drive_3" }
@@ -147,9 +141,7 @@ utility_component_template = {
 		weight = 4
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "tech_jump_drive_1" }
@@ -182,9 +174,7 @@ utility_component_template = {
 		weight = 5
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 	
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "tech_psi_jump_drive_1" }

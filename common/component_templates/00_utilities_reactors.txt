@@ -134,9 +134,7 @@ utility_component_template = {
 constructor science transport crisis_corvette offspring_corvette }
 	upgrades_to = "CORVETTE_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 1
@@ -165,9 +163,7 @@ utility_component_template = {
 	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
 	upgrades_to = "DESTROYER_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 1
@@ -191,9 +187,7 @@ utility_component_template = {
 		}
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_fission_power" }
 	component_set = "power_core"
@@ -222,9 +216,7 @@ utility_component_template = {
 		}
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_fission_power" }
 	component_set = "power_core"
@@ -253,9 +245,7 @@ utility_component_template = {
 		}
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_fission_power" }
 	component_set = "power_core"
@@ -284,9 +274,7 @@ utility_component_template = {
 		}
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_fission_power" }
 	class_restriction = { shipclass_military_station }
@@ -326,9 +314,7 @@ utility_component_template = {
 	}
 	upgrades_to = "STARBASE_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 1
@@ -362,9 +348,7 @@ utility_component_template = {
 science transport crisis_corvette offspring_corvette }
 	upgrades_to = "CORVETTE_COLD_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 2
@@ -393,9 +377,7 @@ utility_component_template = {
 	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
 	upgrades_to = "DESTROYER_COLD_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 2
@@ -424,9 +406,7 @@ utility_component_template = {
 	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
 	upgrades_to = "CRUISER_COLD_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 2
@@ -455,9 +435,7 @@ utility_component_template = {
 	size_restriction = { battleship offspring_battleship }
 	upgrades_to = "BATTLESHIP_COLD_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 2
@@ -486,9 +464,7 @@ utility_component_template = {
 	size_restriction = { titan }
 	upgrades_to = "TITAN_COLD_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 2
@@ -522,9 +498,7 @@ utility_component_template = {
 	component_set = "power_core"
 	upgrades_to = "PLATFORM_COLD_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 2
@@ -554,9 +528,7 @@ utility_component_template = {
 	}
 	upgrades_to = "STARBASE_COLD_FUSION_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 2
@@ -590,9 +562,7 @@ utility_component_template = {
 science transport crisis_corvette offspring_corvette }
 	upgrades_to = "CORVETTE_ANTIMATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 3
@@ -621,9 +591,7 @@ utility_component_template = {
 	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
 	upgrades_to = "DESTROYER_ANTIMATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 3
@@ -652,9 +620,7 @@ utility_component_template = {
 	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
 	upgrades_to = "CRUISER_ANTIMATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 3
@@ -683,9 +649,7 @@ utility_component_template = {
 	size_restriction = { battleship offspring_battleship }
 	upgrades_to = "BATTLESHIP_ANTIMATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 3
@@ -714,9 +678,7 @@ utility_component_template = {
 	size_restriction = { titan }
 	upgrades_to = "TITAN_ANTIMATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 3
@@ -750,9 +712,7 @@ utility_component_template = {
 	}
 	upgrades_to = "PLATFORM_ANTIMATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 3
@@ -782,9 +742,7 @@ utility_component_template = {
 	}
 	upgrades_to = "STARBASE_ANTIMATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 3
@@ -818,9 +776,7 @@ utility_component_template = {
 science transport crisis_corvette offspring_corvette }
 	upgrades_to = "CORVETTE_ZERO_POINT_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 4
@@ -849,9 +805,7 @@ utility_component_template = {
 	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
 	upgrades_to = "DESTROYER_ZERO_POINT_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 4
@@ -880,9 +834,7 @@ utility_component_template = {
 	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
 	upgrades_to = "CRUISER_ZERO_POINT_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 4
@@ -911,9 +863,7 @@ utility_component_template = {
 	size_restriction = { battleship offspring_battleship }
 	upgrades_to = "BATTLESHIP_ZERO_POINT_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 4
@@ -942,9 +892,7 @@ utility_component_template = {
 	size_restriction = { titan }
 	upgrades_to = "TITAN_ZERO_POINT_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 4
@@ -978,9 +926,7 @@ utility_component_template = {
 	}
 	upgrades_to = "PLATFORM_ZERO_POINT_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 4
@@ -1010,9 +956,7 @@ utility_component_template = {
 	}
 	upgrades_to = "STARBASE_ZERO_POINT_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 4
@@ -1046,9 +990,7 @@ utility_component_template = {
 science transport crisis_corvette offspring_corvette }
 	upgrades_to = "CORVETTE_DARK_MATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 5
@@ -1077,9 +1019,7 @@ utility_component_template = {
 	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
 	upgrades_to = "DESTROYER_DARK_MATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 5
@@ -1108,9 +1048,7 @@ utility_component_template = {
 	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
 	upgrades_to = "CRUISER_DARK_MATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 5
@@ -1139,9 +1077,7 @@ utility_component_template = {
 	size_restriction = { battleship offspring_battleship }
 	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 5
@@ -1170,9 +1106,7 @@ utility_component_template = {
 	size_restriction = { titan }
 	upgrades_to = "TITAN_DARK_MATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 5
@@ -1222,9 +1156,7 @@ utility_component_template = {
 	}
 	upgrades_to = "PLATFORM_DARK_MATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 5
@@ -1248,9 +1180,7 @@ utility_component_template = {
 	size_restriction = { ion_cannon }
 	upgrades_to = "ION_CANNON_DARK_MATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 5
@@ -1280,9 +1210,7 @@ utility_component_template = {
 	}
 	upgrades_to = "STARBASE_DARK_MATTER_REACTOR"
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 5
@@ -1311,9 +1239,7 @@ utility_component_template = {
 		}
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
@@ -1351,9 +1277,7 @@ utility_component_template = {
 		}
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
@@ -1390,9 +1314,7 @@ utility_component_template = {
 		}
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
@@ -1429,9 +1351,7 @@ utility_component_template = {
 		}
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
@@ -1468,9 +1388,7 @@ utility_component_template = {
 		}
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
@@ -1499,9 +1417,7 @@ utility_component_template = {
 		category = ship_components
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
@@ -1539,9 +1455,7 @@ utility_component_template = {
 		military_station_large
 	}
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 0
@@ -1574,9 +1488,7 @@ utility_component_template = {
 	component_set = "power_core"
 	size_restriction = { ion_cannon }
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	ai_weight = {
 		weight = 0
@@ -1598,9 +1510,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = @starbase_power_6
 	
-	valid_for_country = {
-	    NOT = { has_origin = origin_shadows }
-	}
+
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
