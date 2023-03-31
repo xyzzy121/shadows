@@ -63,35 +63,35 @@
 @corvette_cost_3 = 17
 @corvette_cost_4 = 22
 @corvette_cost_5 = 28
-@corvette_cost_6 = 37
+@corvette_cost_6 = 370000
 
 @destroyer_cost_1 = 20
 @destroyer_cost_2 = 26
 @destroyer_cost_3 = 34
 @destroyer_cost_4 = 44
 @destroyer_cost_5 = 56
-@destroyer_cost_6 = 74
+@destroyer_cost_6 = 740000
 
 @cruiser_cost_1 = 40
 @cruiser_cost_2 = 52
 @cruiser_cost_3 = 68
 @cruiser_cost_4 = 88
 @cruiser_cost_5 = 112
-@cruiser_cost_6 = 148
+@cruiser_cost_6 = 1480000
 
 @battleship_cost_1 = 80
 @battleship_cost_2 = 104
 @battleship_cost_3 = 136
 @battleship_cost_4 = 176
 @battleship_cost_5 = 224
-@battleship_cost_6 = 296
+@battleship_cost_6 = 2960000
 
 @titan_cost_1 = 160
 @titan_cost_2 = 208
 @titan_cost_3 = 272
 @titan_cost_4 = 352
 @titan_cost_5 = 448
-@titan_cost_6 = 592
+@titan_cost_6 = 5920000
 
 @colossus_cost_1 = 0
 
@@ -100,7 +100,7 @@
 @platform_cost_3 = 34
 @platform_cost_4 = 44
 @platform_cost_5 = 56
-@platform_cost_6 = 74
+@platform_cost_6 = 740000
 
 #############
 # REACTORS #
