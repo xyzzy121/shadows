@@ -1,26 +1,26 @@
 @hit2 = 5
 @hit3 = 10
-@hit4 = 15
+@hit4 = 15000
 
 @cost1 = 2
 @cost2 = 4
 @cost3 = 6
-@cost4 = 8
+@cost4 = 800000
 
 @power1 = -5
 @power2 = -10
 @power3 = -15
-@power4 = -20
+@power4 = -200000
 
 @sensor1 = 1
 @sensor2 = 2
 @sensor3 = 3
-@sensor4 = 4
+@sensor4 = 99
 
 @hyperlane1 = 2
 @hyperlane2 = 3
 @hyperlane3 = 4
-@hyperlane4 = 5
+@hyperlane4 = 99
 
 utility_component_template = {
 	key = "SENSOR_1"
