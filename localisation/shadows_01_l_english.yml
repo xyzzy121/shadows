@@ -36,16 +36,16 @@
  ###################################################
  
  EMPIRE_DESIGN_shadow1:0 "Shadow"
- EMPIRE_DESIGN_shadow1_desc:0 "What do you whant?2"
+ EMPIRE_DESIGN_shadow1_desc:0 "What do you want?"
  START_SCREEN_SHADOWS:0 "What is past is also sometimes future. Cycles of Chaos and Order.. We are what we must be. The fire that makes room for new life. The strong survive while the weak perish. And it falls to us to insure this cycle continues. We have carried out this task since the First Ones themselves were young. As we awaken and return to sacred Z'ha'dum, we will fulfill our role again."
  
  sentm:0 "Sentience Module"
- sentm_desc:0 "Remember all those missing people who ejected? The ones we didn't find? Well lets just say the Shadows use green processor technology.. solyent green."
+ sentm_desc:0 "Remember all those missing people who ejected? The ones we didn't find? Well let's just say the Shadows use green processor technology.. solyent green."
  
  sha_zah_cities:0 "Ancient Shadow Home World"
  sha_zah_cities_desc:0 "Through thousands of years every inch of this planet was converted to something useful."
  d_zah_ruins:0 "Z'ha'dum Restoration Project"
- d_zah_ruins_desc:0 "Z'ha'dum once was a prosper green planet, time to bring it back."
+ d_zah_ruins_desc:0 "Z'ha'dum once was a prosperous green planet, time to bring it back."
  d_zah_ruins_2:0 "Undeground Cities Restoration Project"
  d_zah_ruins_2_desc:0 "Many of our underground cities was destroyed by last siege, we should restore them."
  
@@ -56,12 +56,12 @@
  d_wormseed:0 "Wormseed World"
  
  pc_wormseed:0 "Wormseed"
- pc_wormseed_desc:0 "This planet was converted to wormseed world, it completely devoid of any life."
+ pc_wormseed_desc:0 "This planet was converted to a wormseed world, it completely devoid of any life."
  
  NAME_ShadowCrab:0 "Ancient Shadow Ship"
  
  decision_worm_seed: "Wormseed"
- decision_worm_seed_desc:0 "The Seed reduces worlds within and without to a fetid humus that fuels mile think landmasses of Organic Technology. Converting it to planetary size weapon factory"
+ decision_worm_seed_desc:0 "The Seed reduces worlds within and without to a fetid humus, that fuels mile thick landmasses of Organic Technology. This Converts it to a planetary size weapon factory."
  decision_worm_seed_effects: "Starts the process of growing a §YWormseed World§!.\nAt Stage 1: Monthly £food£ Food §G+100§!\nAt Stage 2: Monthly £minerals£ Minerals §G+100§!\nWormseed World:\nMonthly £alloys£ Alloys §G+5§!\nMonthly £nanites£ Nanites §G+1§!\nMonthly £sr_living_metal£ Living Metal §G+1§!"
  
  
@@ -69,10 +69,10 @@
  #   Events
  ###################################################
  SHADOW_ANCIENT_SHIP_PROJECT:0 "Ancient Shadow Ship"
- SHADOW_ANCIENT_SHIP_PROJECT_DESC:0 "While this ship is very old, our scientists believe it still can accept new sentience module and will operate at 70% efficiency."
+ SHADOW_ANCIENT_SHIP_PROJECT_DESC:0 "While this ship is very old, our scientists believe it still can accept a new sentience module and will operate at 70% efficiency."
  ancientship.01.name: "Ancient Shadow Ship Awakening"
- ancientship.01.desc: "We have found one of our ancient ships, slumbering beneath the surface of Z'ha'dum. It may have atrophied with age but it is far beyond the younger races."
- ancientship.01.a: "Long it once stood sentinel over our world. Prepare to reawaken the ship."
+ ancientship.01.desc: "We have found one of our ancient ships, slumbering beneath the surface of Z'ha'dum. It may have atrophied with age but it's tech is still far beyond that of the younger races."
+ ancientship.01.a: "Once, long ago, stood sentinel over our world. Prepare to reawaken the ship."
  ancientship.01.b: "This terror has had it's time."
  ancientship.02.name: "Ancient Shadow Ship Awaken"
  ancientship.02.desc: "Ship is fully operational and ready for its first task."
@@ -83,9 +83,9 @@
  trait_pc_zah_preference:0 "Z'ha'dum Preference"
  trait_pc_zah_preference_desc:0 "§LClimate preference is determined at the genetic level, by eons of evolution or skillful manipulation.§!"
  trait_shadow:0 "Shadow"
- trait_shadow_desc:0 "The Shadows are ageless but they are not immortal nor are they virtually indestructible. They reproduce sexually and new members are hatched just as the first Shadows did eons ago. The Shadows have mastered the ability to phase directly into hyperspace, with the result that they exist in "phase space", a sub-dimension that is similar to that of hyperspace. They are able to move in and out of that sub-dimension at will, and when a Shadow is out of phase with realspace it is undetectable, immaterial, and intangible, which gives them the ability to walk through solid objects - they can be immaterial or solid whenever they desire."
+ trait_shadow_desc:0 "The Shadows are ageless but they are not immortal, nor are they virtually indestructible. They reproduce sexually, and new members are hatched just as the first Shadows did eons ago. The Shadows have mastered the ability to phase directly into hyperspace, the result being that they exist in "phase space", a sub-dimension that is similar to that of hyperspace. They are able to move in and out of that sub-dimension at will, and when a Shadow is out of phase with realspace it is undetectable, immaterial, and intangible, which gives them the ability to walk through solid objects. This ability can be triggered whenever they desire."
  trait_shadow_physiology:0 "Shadow Physiology"
- trait_shadow_physiology_desc:0 "Shadows are insectoid creatures on six multi-jointed legs, with an upper body that possesses two hooked claws and a head covered by a crown of chitinous spikes and horns. On their face are numerous glowing yellow-red eyes. The fractal-edged claws are able to rip through steel as if it were nothing more than paper. Due to the minute protrusions and probes on the claws' edges, they can easily and precisely manipulate micro-sized objects. By lacing the Shadow carapaces with synergic configurations of carbon and dense metals, they have made them virtually unbreakable. Shadows have evolved beyond the need for specific organs, therefore they are mostly a spongy mass that functions as muscle, digestive system, lungs, and energy storage at once. They augment their bodies with numerous technological implants. Shadows possess massive brains, which are a coiled mass of black tissue whose activity is thousands of times greater than that of younger races. The entire electromagnetic spectrum is visible to their multifaceted eyes, and each pair of eyes possesses its own special perceptive capabilities."
+ trait_shadow_physiology_desc:0 "Shadows are insectoid creatures on six multi-jointed legs, with an upper body that possesses two hooked claws, and a head covered by a crown of chitinous spikes and horns. On their face are numerous glowing yellow-red eyes. The fractal-edged claws are able to rip through steel as if it were nothing more than paper. Due to the minute protrusions and probes on the claws' edges, they can easily and precisely manipulate micro-sized objects. By lacing the Shadow carapaces with synergic configurations of carbon and dense metals, they have made them virtually unbreakable. Shadows have evolved beyond the need for specific organs, therefore they are mostly a spongy mass that functions as muscle, digestive system, lungs, and energy storage at once. They augment their bodies with numerous technological implants. Shadows possess massive brains, which are a coiled mass of black tissue whose activity is thousands of times greater than that of younger races. The entire electromagnetic spectrum is visible to their multifaceted eyes, and each pair of eyes possesses its own special perceptive capabilities."
  
  ###################################################
  #   Personality
@@ -98,7 +98,7 @@
  # Modifiers
  ###################################################
  
- shadows_modifier_zah_boost:0 "Undeground Cities"
+ shadows_modifier_zah_boost:0 "Underground Cities"
  shadows_modifier_shadows_at_war:0 "40% Unity while at war"
  shadows_modifier_shadows_not_at_war:0 "-60% Unity while not at war"
  shadows_modifier_ships_boost:0 "Shadows Efficiency"
@@ -121,7 +121,7 @@
  ###################################################
  
  civic_shadows1:0 "Lords of Chaos"
- civic_shadows1_desc:0 "It's like knocking over an ant hill. Every new generation gets stronger, the anthill redesigned.. made better."
+ civic_shadows1_desc:0 "It's like knocking over an ant hill. Every new generation gets stronger, the anthill redesigned... made better."
  civic_shadows1_effect:0 "Has the §Y'Stronger through adversity'§! casus belli.\nCan not join the Galactic Community.\nCan not form migration treaties.\nDecreased opinion from non militaristic empires."
  civic_shadows2:0 "First Ones"
  civic_shadows2_desc:0 "There are beings in the universe billions of years old. Once, long ago, they walked among the stars like giants... vast and timeless."
@@ -163,14 +163,14 @@
  ###################################################
  
  galcom_shadows:0 "We know what promises and treaties mean."
- galcom_shadows.tooltip:0 "Whenever this starts, there is always someone that tries to organize the other races.. but for us this is unproductive.\n"
- community_shadows_failtext:0 "Whenever this starts, there is always someone that tries to organize the other races.. but for us this is unproductive."
+ galcom_shadows.tooltip:0 "Whenever this starts, there is always someone that tries to organize the other races... but for us, this is unproductive.\n"
+ community_shadows_failtext:0 "Whenever this starts, there is always someone that tries to organize the other races... but for us, this is unproductive."
  
  ###################################################
  # Diplo responses
  ###################################################
  
- sha_action.1.t1:0 "A gift ambassador, from friends you never knew you had."
+ sha_action.1.t1:0 "A gift, ambassador, from friends you never knew you had."
  sha_action.1.t2:0 "What do you want?"
  sha_action.1.t3:0 "You will do what you are told, one way or another!"
  sha_action.1.desc_52:0 "What do you want?"
@@ -182,7 +182,7 @@
  ###################################################
  
  edict_raiding_party:0 "Tears of the lost"
- edict_raiding_party_desc:0 "Space is a dangerous place.. people dissapear for many reasons never to be found again. So what if some of those find themselves packed away in a container, headed toward Shadow space."
+ edict_raiding_party_desc:0 "Space is a dangerous place... people dissapear for many reasons never to be found again. So what if some of those find themselves packed away in a container, headed toward Shadow space."
  
  ###################################################
  # Tradition
@@ -301,7 +301,7 @@
  STARBASE_SHADOW_COMBAT_COMPUTER_3:0 "$STARBASE_SHADOW_COMBAT_COMPUTER_1$"
  
  SHADOW_LASER:0 "Shadow Molecular Cutter"
- SHADOW_LASER_DESC:0 "The corner stone of Shadow weapon technology, this beam is actually a focused anti electron field. Anything it comes into contact with will suffer immediate molecular breakdown as all binding electrons cease to exist."
+ SHADOW_LASER_DESC:0 "The corner stone of Shadow weapon technology, this beam is actually a focused antielectron field. Anything it comes into contact with will suffer immediate molecular breakdown as all binding electrons cease to exist."
  SHADOWT2_LASER:0 "Shadow Molecular Cutter T2"
  SHADOWT2_LASER_DESC:0 "$SHADOW_LASER_DESC$"
  SHADOWT3_LASER:0 "Shadow Molecular Cutter T3"
@@ -354,13 +354,13 @@
  SHADOW_PERDITION_BEAM_ION_DESC:0 "$SHADOW_PERDITION_BEAM_DESC$"
 
  SHADOW_SENSOR_1:0 "Hyperspatial Sensors"
- SHADOW_SENSOR_1_DESC:1 "These sensors work by detecting shadows of real space objects within hyperspace. Providing both great range and accuracy. Because the sensor itself exists in both real and hyperspace at once it can operate even while the ship is dormant."
+ SHADOW_SENSOR_1_DESC:1 "These sensors work by detecting shadows of real space objects within hyperspace, Providing both great range and accuracy. Because the sensor itself exists in both real and hyperspace at once it can operate even while the ship is dormant."
  SHADOW_SENSOR_2:0 "Hyperspatial Sensors T2"
- SHADOW_SENSOR_2_DESC:0 "These sensors work by detecting shadows of real space objects within hyperspace. Providing both great range and accuracy. Because the sensor itself exists in both real and hyperspace at once it can operate even while the ship is dormant."
+ SHADOW_SENSOR_2_DESC:0 "These sensors work by detecting shadows of real space objects within hyperspace, Providing both great range and accuracy. Because the sensor itself exists in both real and hyperspace at once it can operate even while the ship is dormant."
  SHADOW_SENSOR_3:0 "Hyperspatial Sensors T3"
- SHADOW_SENSOR_3_DESC:0 "These sensors work by detecting shadows of real space objects within hyperspace. Providing both great range and accuracy. Because the sensor itself exists in both real and hyperspace at once it can operate even while the ship is dormant."
+ SHADOW_SENSOR_3_DESC:0 "These sensors work by detecting shadows of real space objects within hyperspace, Providing both great range and accuracy. Because the sensor itself exists in both real and hyperspace at once it can operate even while the ship is dormant."
  SHADOW_SENSOR_4:0 "Hyperspatial Sensors T4"
- SHADOW_SENSOR_4_DESC:0 "These sensors work by detecting shadows of real space objects within hyperspace. Providing both great range and accuracy. Because the sensor itself exists in both real and hyperspace at once it can operate even while the ship is dormant."
+ SHADOW_SENSOR_4_DESC:0 "These sensors work by detecting shadows of real space objects within hyperspace, Providing both great range and accuracy. Because the sensor itself exists in both real and hyperspace at once it can operate even while the ship is dormant."
  
  SMALL_SHADOW_ARMOR_1:0 "Bio-Organic Armored Hull"
  SMALL_SHADOW_ARMOR_1_DESC:0 "Bio-organic molecular-mesh armoured hull existing in a fluid state yet far denser than any alloy. Its reactive nature instantly focuses the armour's innate reflective and regenerative properties on impact sites, largely nullifying all known energy forms."
