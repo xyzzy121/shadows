@@ -37,7 +37,7 @@ building_shadow_research_lab_1 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_researcher_add = 3
+			job_researcher_add = 999
 		}
 	}
 
@@ -47,7 +47,7 @@ building_shadow_research_lab_1 = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 3
+			job_brain_drone_add = 999
 		}
 	}
 
@@ -57,7 +57,7 @@ building_shadow_research_lab_1 = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 3
+			job_calculator_add = 999
 		}
 	}
 
@@ -131,7 +131,7 @@ building_shadow_research_lab_2 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_researcher_add = 10
+			job_researcher_add = 2000
 		}
 	}
 
@@ -141,7 +141,7 @@ building_shadow_research_lab_2 = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 10
+			job_brain_drone_add = 2000
 		}
 	}
 
@@ -151,7 +151,7 @@ building_shadow_research_lab_2 = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 10
+			job_calculator_add = 2000
 		}
 	}
 
@@ -227,7 +227,7 @@ building_shadow_research_lab_3 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_researcher_add = 15
+			job_researcher_add = 3000
 		}
 	}
 
@@ -237,7 +237,7 @@ building_shadow_research_lab_3 = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = 15
+			job_brain_drone_add = 3000
 		}
 	}
 
@@ -247,7 +247,7 @@ building_shadow_research_lab_3 = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = 15
+			job_calculator_add = 3000
 		}
 	}
 
@@ -262,7 +262,7 @@ building_shadow_research_lab_3 = {
 			has_modifier = pm_extradimensional_experimentation
 		}
 		modifier = {
-			job_dimensional_portal_researcher_add = 1
+			job_dimensional_portal_researcher_add = 100
 		}
 	}
 
@@ -277,7 +277,7 @@ building_shadow_research_lab_3 = {
 			has_modifier = pm_extradimensional_experimentation
 		}
 		modifier = {
-			job_dimensional_portal_researcher_gestalt_add = 1
+			job_dimensional_portal_researcher_gestalt_add = 100
 		}
 	}
 
