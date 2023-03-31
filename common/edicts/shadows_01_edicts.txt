@@ -1,0 +1,41 @@
+##########################################################################
+# Empire edicts
+##########################################################################
+
+@Edict1Cost = 10
+@Edict2Cost = 20
+@Edict3Cost = 30
+
+@EdictPerpetual = -1
+
+#################
+# Toggle Edicts
+#################
+
+raiding_party = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = 100
+		}
+		upkeep = {
+		    influence = 1
+		}
+	}
+	
+	modifier = {
+	country_base_sentm_produces_add = 5
+    }
+	
+	potential = {
+		has_origin = origin_shadows
+		has_tradition = tr_shadows_way_5
+	}
+
+	ai_weight = {
+		weight = 500
+	}
+}

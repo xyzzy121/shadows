@@ -1,0 +1,10 @@
+﻿l_english:
+
+origin_shadows: "Shadows"
+origin_shadows_desc: "This species has formed their society around a cycle of destruction with long spans of sleep between each galactic calamity. Each time they arise they are gradually driven back. However the galaxy does not understand their purpose, and so each new cycle they awake and return. For strength comes with conflict."
+origin_tooltip_shadows: "Pick this origin for a more authentic, less balanced Shadow experience.\n- Start in isolated system with a §HZ'ha'dum§! (Size: £planetsize£ §Y30§!) as your homeworld.\n- Grants access to Shadows Technology.\n- §RCannot use ballistic or missile weapons.§!\n- Grants special bonuses to your Empire:"
+
+origin_shadows2: "Ancient Shadows"
+origin_shadows2_desc: "This species rose during the very early epochs of the universe. It was a very different time. The competition between what life arose was not only against other life but also the unstable cosmos. This species survived into a new age in spite of terrible hardships. Rebuilding multiple times from the edge of total extinction. Now life is easier, heavier metals exist, planets are stars are more stable. New life has began growing. Soft, weak life.. they should be helped."
+origin_tooltip_shadows2: "- Start as Shadows with a §HZ'ha'dum§! (Size: £planetsize£ §Y50§!) as your homeworld.\n- Grants special bonuses to your Empire:"
+### - Replaces £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!. $job_catalytic_technician_effect_desc$.

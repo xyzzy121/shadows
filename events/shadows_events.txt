@@ -1,0 +1,433 @@
+
+### SHADOWS EVENTS
+
+namespace = shadows_ac
+
+# War Whitout End
+event = {
+	id = shadows_ac.0004
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				has_policy_flag = diplo_stance_war_without_end
+			}
+			if = {
+				limit = {
+					is_at_war = yes
+				}
+				add_modifier = { modifier = "shadows_modifier_shadows_at_war" }
+				remove_modifier = shadows_modifier_shadows_not_at_war
+				else = {
+					remove_modifier = "shadows_modifier_shadows_at_war"
+					add_modifier = { modifier = shadows_modifier_shadows_not_at_war }
+				}
+			}
+		}
+	}
+}
+
+# War Whitout End
+# On War started - Gain the modifier (+15% Unity)
+#country_event = {
+#	id = shadows_ac.0001
+#	hide_window = yes
+#	is_triggered_only = yes
+#	fire_only_once = no
+#
+#	trigger = {
+#		has_policy_flag = diplo_stance_war_without_end
+#	}
+#
+#	immediate = {
+#		add_modifier = { modifier = shadows_modifier_shadows_at_war }
+#		ROOT = { remove_modifier = shadows_modifier_shadows_not_at_war }
+#	}
+#}
+
+# War Whitout End
+# On War ended - Remove the modifier
+#country_event = {
+#	id = shadows_ac.0002
+#	hide_window = yes
+#	is_triggered_only = yes
+#	fire_only_once = no
+#
+#	trigger = {
+#		  has_policy_flag = diplo_stance_war_without_end
+#	}
+#
+#	immediate = {
+#		    ROOT = { remove_modifier = shadows_modifier_shadows_at_war }
+#	        add_modifier = { modifier = shadows_modifier_shadows_not_at_war }
+#	}
+#}
+
+#Gives Sentience Module when destroying ships
+country_event = {
+	id = shadows_ac.0003
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_shadows
+	}
+	
+	immediate = {
+		FromFromFrom = {
+			switch = {
+				trigger = is_ship_size
+				
+				corvette = { root = {add_resource = { sentm = 1 } } break = yes}
+				frigate = { root = {add_resource = { sentm = 2 } } break = yes}
+				destroyer = { root = {add_resource = { sentm = 3 } } break = yes}
+				cruiser = { root = {add_resource = { sentm = 5 } } break = yes}
+				battleship = { root = {add_resource = { sentm = 10 } } break = yes}
+				titan = { root = {add_resource = { sentm = 15 } } break = yes}
+				
+				transport = { root = {add_resource = { sentm = 25 } } break = yes} 
+				constructor = { root = {add_resource = { sentm = 0.1 } } break = yes}
+				colonizer = { root = {add_resource = { sentm = 50 } } break = yes}
+				science = { root = {add_resource = { sentm = 1 } } break = yes}
+				
+				military_station_small = { root = {add_resource = { sentm = 1 } } break = yes}
+				military_station_medium = { root = {add_resource = { sentm = 5 } } break = yes}
+				military_station_large = { root = {add_resource = { sentm = 10 } } break = yes}
+				
+				mining_station = { root = {add_resource = { sentm = 1 } } break = yes}
+				research_station = { root = {add_resource = { sentm = 1 } } break = yes}				
+				observation_station = { root = {add_resource = { sentm = 1 } } break = yes}
+				
+				starbase_outpost = { root = {add_resource = { sentm = 5 } } break = yes}
+				starbase_starport = { root = {add_resource = { sentm = 10 } } break = yes}
+				starbase_starhold = { root = {add_resource = { sentm = 15 } } break = yes}
+				starbase_starfortress = { root = {add_resource = { sentm = 20 } } break = yes}
+				starbase_citadel = { root = {add_resource = { sentm = 25 } } break = yes}
+
+				starbase_swarm = { root = {add_resource = { sentm = 15 } } break = yes}
+				starbase_exd = { root = {add_resource = { sentm = 15 } } break = yes}
+				starbase_marauder = { root = {add_resource = { sentm = 15 } } break = yes}
+				ion_cannon = { root = {add_resource = { sentm = 0.1 } } break = yes}
+
+				colossus  = { root = {add_resource = { sentm = 1 } } break = yes}
+				
+				small_ship_swarm = { root = {add_resource = { sentm = 1 } } break = yes}
+				large_ship_swarm = { root = {add_resource = { sentm = 3 } } break = yes}
+				large_ship_carrier_swarm = { root = {add_resource = { sentm = 5 } } break = yes}
+				queen_swarm = { root = {add_resource = { sentm = 15 } } break = yes}
+				construction_ship_swarm = { root = {add_resource = { sentm = 0.1 } } break = yes}
+				colony_ship_swarm = { root = {add_resource = { sentm = 50 } } break = yes}
+				transport_ship_swarm = { root = {add_resource = { sentm = 25 } } break = yes}
+				 
+				small_ship_fallen_empire = { root = {add_resource = { sentm = 1 } } break = yes}
+				large_ship_fallen_empire = { root = {add_resource = { sentm = 5 } } break = yes}
+				massive_ship_fallen_empire = { root = {add_resource = { sentm = 15 } } break = yes}
+				military_station_large_fallen_empire = { root = {add_resource = { sentm = 20 } } break = yes}
+				military_station_small_fallen_empire = { root = {add_resource = { sentm = 5 } } break = yes}
+				 
+				small_ship_ed = { root = {add_resource = { sentm = 1 } } break = yes}
+				medium_ship_ed = { root = {add_resource = { sentm = 5 } } break = yes}
+				large_ship_ed = { root = {add_resource = { sentm = 10 } } break = yes}
+				construction_ship_ed = { root = {add_resource = { sentm = 0.1 } } break = yes}
+	 
+				enclave_station = { root = {add_resource = { sentm = 10 } } break = yes}
+				station_xl = { root = {add_resource = { sentm = 20 } } break = yes}
+				station_l = { root = {add_resource = { sentm = 15 } } break = yes}
+				station_m = { root = {add_resource = { sentm = 10 } } break = yes}
+				station_s = { root = {add_resource = { sentm = 5 } } break = yes}
+				station_xs = { root = {add_resource = { sentm = 5 } } break = yes}
+				npc_warship_01 = { root = {add_resource = { sentm = 5 } } break = yes}
+				homebase = { root = {add_resource = { sentm = 10 } } break = yes}
+				hive_asteroid = { root = {add_resource = { sentm = 1 } } break = yes}
+				 				 
+				pirate_corvette = { root = {add_resource = { sentm = 1 } } break = yes}
+				pirate_destroyer = { root = {add_resource = { sentm = 3 } } break = yes}
+				pirate_cruiser = { root = {add_resource = { sentm = 5 } } break = yes}
+				pirate_station = { root = {add_resource = { sentm = 5 } } break = yes}		 
+				 
+				marauder_corvette = { root = {add_resource = { sentm = 1 } } break = yes}
+				marauder_destroyer = { root = {add_resource = { sentm = 3 } } break = yes}
+				marauder_cruiser = { root = {add_resource = { sentm = 5 } } break = yes}
+				marauder_galleon = { root = {add_resource = { sentm = 10 } } break = yes}
+				marauder_station = { root = {add_resource = { sentm = 10 } } break = yes}	 						
+				
+			}
+			root = {
+				add_resource = { sentm = 0 }
+			} 
+		}		
+	}
+}
+
+#Shadows way adopt, penalty to fleet on entering battle.
+country_event = {
+	id = shadows_ac.0005
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = tr_shadows_way_adopt_picked_flag
+		Or = {
+			has_active_tradition = tr_shadows_way_adopt
+			from = {
+				has_active_tradition = tr_shadows_way_adopt
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				from = {
+					has_active_tradition = tr_shadows_way_adopt
+				}
+				fromfrom = {
+					Not = {
+						has_modifier = mod_shadows_way_adopt
+					}
+				}
+			}
+			fromfrom = {
+				add_modifier = {
+					modifier = "mod_shadows_way_adopt"
+					years = 1
+				}
+			}
+		}
+		fromfromfrom = {
+			if = {
+				limit = {
+					root = {
+						has_active_tradition = tr_shadows_way_adopt
+					}
+					Not = {
+						has_modifier = mod_shadows_way_adopt
+					}
+				}
+				add_modifier = {
+					modifier = "mod_shadows_way_adopt"
+					years = 1
+				}
+			}
+		}
+	}
+}
+
+#Shadows way adopt, removes modifier once battle is over.
+country_event = {
+	id = shadows_ac.0006
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = no
+		has_global_flag = tr_shadows_way_adopt_picked_flag
+		Or = {
+			fromfrom = {
+				has_modifier = mod_shadows_way_adopt
+			}
+			fromfromfrom = {
+				has_modifier = mod_shadows_way_adopt
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				fromfrom = {
+					has_modifier = mod_shadows_way_adopt
+				}
+			}
+			fromfrom = {
+				remove_modifier = "mod_shadows_way_adopt"
+			}
+		}
+		if = {
+			limit = {
+				fromfromfrom = {
+					has_modifier = mod_shadows_way_adopt
+				}
+			}
+			fromfromfrom = {
+				remove_modifier = "mod_shadows_way_adopt"
+			}
+		}
+	}
+}
+
+#shadows_way_3, a fleet wins battle.
+country_event = {
+	id = shadows_ac.0007
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = tr_shadows_way_3_picked_flag
+		Or = {
+			has_active_tradition = tr_shadows_way_3
+			from = {
+				has_active_tradition = tr_shadows_way_3
+			}
+		}
+	}
+	
+	immediate = {
+				add_modifier = {
+					modifier = "mod_tr_shadows_way_3"
+					days = 30
+				}
+
+	}
+}
+
+# Afent of Chaos Finisher
+#country_event = {
+#	id = shadows_ac.0008
+#	hide_window = yes
+#	is_triggered_only = yes
+#	fire_only_once = no
+#	
+#	immediate = {
+#			add_opinion_modifier = {
+#			who = root
+#			modifier = opinion_agents_of_chaos
+#			}
+#		}
+#}
+
+country_event = {
+	id = shadows_ac.1001
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_shadows
+	}
+
+	immediate = {
+			if = {
+				limit = {
+				last_increased_tech = tech_shadow_lance_1
+				Not = { has_technology = tech_energy_lance_1 }
+				}
+		give_technology = { tech = "tech_energy_lance_1" message = no }
+		}
+			if = {
+				limit = {
+				last_increased_tech = tech_shadow_hyper_drive_2
+				Not = { has_technology = tech_hyper_drive_2 }
+				}
+		give_technology = { tech = "tech_hyper_drive_2" message = no  }
+		}
+			if = {
+				limit = {
+				last_increased_tech = tech_shadow_hyper_drive_3
+				Not = { has_technology = tech_hyper_drive_3 }
+				}
+		give_technology = { tech = "tech_hyper_drive_3" message = no  }
+		}		
+			if = {
+				limit = {
+				last_increased_tech = tech_shadow_thrusters_2
+				Not = { has_technology = tech_thrusters_2 }
+				}
+		give_technology = { tech = "tech_thrusters_2" message = no  }
+		}
+			if = {
+				limit = {
+				last_increased_tech = tech_shadow_thrusters_3
+				Not = { has_technology = tech_thrusters_3 }
+				}
+		give_technology = { tech = "tech_thrusters_3" message = no  }
+		}
+			if = {
+				limit = {
+				last_increased_tech = tech_shadow_thrusters_4
+				Not = { has_technology = tech_thrusters_4 }
+				}
+		give_technology = { tech = "tech_thrusters_4" message = no  }
+		}
+		if = {
+				limit = {
+				last_increased_tech = tech_shadow_sensors_2
+				Not = { has_technology = tech_sensors_2 }
+				}
+		give_technology = { tech = "tech_sensors_2" message = no  }
+		}
+		if = {
+				limit = {
+				last_increased_tech = tech_shadow_sensors_3
+				Not = { has_technology = tech_sensors_3 }
+				}
+		give_technology = { tech = "tech_sensors_3" message = no  }
+		}
+		if = {
+				limit = {
+				last_increased_tech = tech_shadow_sensors_4
+				Not = { has_technology = tech_sensors_4 }
+				}
+		give_technology = { tech = "tech_sensors_4" message = no  }
+		}	
+		if = {
+				limit = {
+				last_increased_tech = tech_shadow_fusion_power
+				Not = { has_technology = tech_fusion_power }
+				}
+		give_technology = { tech = "tech_fusion_power" message = no  }
+		}
+		if = {
+				limit = {
+				last_increased_tech = tech_shadow_cold_fusion_power
+				Not = { has_technology = tech_cold_fusion_power }
+				}
+		give_technology = { tech = "tech_cold_fusion_power" message = no  }
+		}	
+		if = {
+				limit = {
+				last_increased_tech = tech_shadow_antimatter_power
+				Not = { has_technology = tech_antimatter_power }
+				}
+		give_technology = { tech = "tech_antimatter_power" message = no  }
+		}
+		if = {
+				limit = {
+				last_increased_tech = tech_shadow_zero_point_power
+				Not = { has_technology = tech_zero_point_power }
+				}
+		give_technology = { tech = "tech_zero_point_power" message = no  }
+		}		
+	}
+}
+
+planet_event = {
+	id = shadows_ac.1002
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			OR = {
+				has_origin = origin_shadows
+			}
+		}
+		exists = fromfrom #crisis.202 can remove the last pop
+		FROMFROM = {
+			is_robot_pop = no
+			NOT = {
+				is_same_species = owner_species
+			}
+		}
+		is_controlled_by = FROM
+	}
+
+	immediate = {
+		FROM = {
+			add_resource = {
+				sentm = 1000
+			}
+		}
+	}
+}

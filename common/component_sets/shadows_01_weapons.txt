@@ -1,0 +1,88 @@
+# Icons set here are the ones shown in component editor list.
+
+component_set = {
+	key = "SHADOW_PLASMA_MISSILE_1"
+
+	key = SHADOW_PLASMA_MISSILE_1
+	icon = GFX_ship_part_shadow_plasma_missile_1
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_PLASMA_MISSILE_2"
+
+	key = SHADOW_PLASMA_MISSILE_2
+	icon = GFX_ship_part_shadow_plasma_missile_2
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_PLASMA_MISSILE_3"
+
+	key = SHADOW_PLASMA_MISSILE_3
+	icon = GFX_ship_part_shadow_plasma_missile_3
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_LASER"
+
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOWT2_LASER"
+
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOWT3_LASER"
+
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOWT4_LASER"
+
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOWT5_LASER"
+
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_LANCE_1"
+
+	icon = "GFX_ship_part_shadow_lance_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_LANCE_2"
+
+	icon = "GFX_ship_part_shadow_lance_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_PERDITION_BEAM"
+
+	icon = "GFX_ship_part_shadow_perdition_beam"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_TITAN_LASER"
+
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+}

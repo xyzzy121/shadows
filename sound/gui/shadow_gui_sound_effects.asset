@@ -1,0 +1,10 @@
+
+soundeffect = {
+	name = shadow_birth
+	sounds = {
+		sound = shadow_birth
+	}  
+	volume = 0.3
+	max_audible = 1
+	max_audible_behaviour = fail	
+}

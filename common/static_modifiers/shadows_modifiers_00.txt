@@ -1,0 +1,78 @@
+##########################################################################
+# Icon Frames
+##########################################################################
+# 1 = Good (green)
+# 2 = Mixed (yellow)
+# 3 = Bad (red)
+# 4 = Neutral/flavor (White)
+# 5 = Precursor (Light Blue special)
+# 6 = Event (Purple)
+# 7 = (Dark Blue)
+# 8 = Machine Worlds(Orange)
+# 9 = Fallen Empires (Pink-Purple)
+
+##########################################################################
+# Empire Modifiers
+##########################################################################
+
+# War Whitout End
+# +40% Unity while at war
+shadows_modifier_shadows_at_war = {
+	country_unity_produces_mult = 0.40
+}
+# -% Unity while not at war
+shadows_modifier_shadows_not_at_war = {
+	country_unity_produces_mult = -0.60
+}
+# +100 % housing
+shadows_modifier_zah_boost = {
+		planet_housing_mult = 1
+}
+# Shadow ships boost
+shadows_modifier_ships_boost = {
+        ship_hull_mult = 1
+		ship_armor_mult = 1
+		ship_shield_mult = 1
+		ship_weapon_damage = 1
+		ship_military_upkeep_mult = 0.50
+}
+#Agents of Chaos
+mod_shadows_way_adopt = {
+	ship_disengage_chance_reduction = 0.50
+}
+
+mod_tr_shadows_way_3 = {
+	country_unity_produces_mult = 1
+}
+#Wormseed
+sha_wormseed_stage_1 = {
+	pop_environment_tolerance = 0.2	
+	pop_growth_speed = -1
+	country_base_food_produces_add = 100
+	
+	icon = "gfx/interface/icons/planet_modifiers/sha_wormseed_stages.dds"
+	icon_frame = 3
+}
+
+sha_country_wormseed_stage_1 = {
+	country_base_food_produces_add = 100
+	
+	icon = "gfx/interface/icons/planet_modifiers/sha_wormseed_stages.dds"
+	icon_frame = 3
+}
+
+sha_wormseed_stage_2 = {
+	pop_environment_tolerance = 0.5
+	country_base_minerals_produces_add = 100
+	pop_growth_speed = -1
+	
+	icon = "gfx/interface/icons/planet_modifiers/sha_wormseed_stages.dds"
+	icon_frame = 2
+}
+
+sha_country_wormseed_stage_2 = {
+	country_base_minerals_produces_add = 100
+	
+	icon = "gfx/interface/icons/planet_modifiers/sha_wormseed_stages.dds"
+	icon_frame = 3
+}

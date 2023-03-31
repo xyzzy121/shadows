@@ -1,0 +1,29 @@
+# This is called in initializers for all standard empires, before the empire actually exists
+# This is called after game start
+shadows_generate_home_world = {
+
+	if = {
+		limit = {
+			is_planet_class = pc_zah
+			owner = {
+				has_origin = origin_shadows
+			}
+		}		
+		add_building = building_shadow_research_lab_1
+
+		set_planet_size = 50
+		set_planet_flag = suppress_archaeological_sites
+
+		# blockers
+		add_deposit = d_ruined_arcology
+		add_deposit = d_ruined_arcology
+		add_deposit = d_ruined_arcology
+		add_deposit = d_ruined_arcology
+		add_deposit = d_ruined_arcology
+		add_deposit = d_zah_ruins
+		add_deposit = d_zah_ruins_2
+
+		# Z'Ha'Dum
+		add_deposit = sha_zah_cities
+	}
+}

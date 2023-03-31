@@ -1,0 +1,47 @@
+shadows = {
+       aggressiveness = 2.0
+       trade_willingness = -10.0
+       bravery = 1.0
+       military_spending = 1.2
+       colony_spending = 1.2
+       threat_modifier = 0
+       threat_others_modifier = 0
+       friction_modifier = 10
+       claims_modifier = 2.0
+
+       federation_acceptance = -1000
+       nap_acceptance = -1000
+       commercial_pact_acceptance = -1000
+       research_agreement_acceptance = -1000
+       migration_pact_acceptance = -1000
+       defensive_pact_acceptance = 100
+
+       behaviour = {
+               conqueror = yes
+               subjugator = no
+               liberator = no
+               opportunist = yes
+               slaver = yes
+               uplifter = yes
+               purger = yes
+               dominator = yes
+               infiltrator = yes
+               robot_exploiter = no
+               robot_liberator = no
+               propagator = yes
+               multispecies = no
+               crisis_fighter = no
+               attack_neutrals = yes
+        }
+        allow = {
+               has_country_flag = is_shadows
+			   has_valid_civic = civic_shadows1
+			 OR = {
+		               has_origin = origin_shadows
+		               has_origin = origin_shadows2
+		          }
+        }
+        weight_modifier = {
+               weight = 1000
+        }
+}

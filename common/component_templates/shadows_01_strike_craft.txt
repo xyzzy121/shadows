@@ -1,0 +1,272 @@
+@sha_attack_range = 10
+@sha_engagement_range = 100
+@sha_launch_time = 1.5
+@sha_speed1 = 550
+@sha_speed2 = 600
+@sha_speed3 = 650
+@sha_speed4 = 700
+@sha_count = 8
+@sha_regen = 2
+
+@sha_power1 = -20
+@sha_power2 = -34
+@sha_power3 = -45
+@sha_power4 = -59
+
+# Large
+
+@sha_l_t1_cost = 80
+@sha_l_t2_cost = 104
+@sha_l_t3_cost = 136
+@sha_l_t4_cost = 136
+@sha_l_t5_cost = 176 
+
+@sha_l_t1_upkeep_energy = 0.60
+@sha_l_t1_upkeep_alloys = 0.160
+@sha_l_t2_upkeep_energy = 1.04
+@sha_l_t2_upkeep_alloys = 0.208
+@sha_l_t3_upkeep_energy = 1.36
+@sha_l_t3_upkeep_alloys = 0.272
+@sha_l_t4_upkeep_energy = 1.36
+@sha_l_t4_upkeep_alloys = 0.272
+@sha_l_t5_upkeep_energy = 1.76
+@sha_l_t5_upkeep_alloys = 0.392
+
+strike_craft_component_template = {
+	key = "LARGE_SHADOW_SCOUT_HANGAR_1"
+	size = LARGE
+	entity = "fighter_entity"
+	weapon_type = point_defence
+	projectile_gfx = "scout_laser_1"
+	power = @sha_power1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t1_cost
+		}
+		upkeep = {
+			energy = @sha_l_t1_upkeep_energy
+			alloys = @sha_l_t1_upkeep_alloys
+		}
+	}
+	count = @sha_count
+	regeneration_per_day = @sha_regen
+	launch_time = @sha_launch_time
+	damage = { min = 8 max = 16 }
+	cooldown = 2.3
+	range = @sha_attack_range
+	engagement_range = @sha_engagement_range
+	accuracy = 1.00
+	tracking = 0.70
+	health = 30
+	armor = 30
+	shield = 0
+
+	evasion = 0.60
+	speed = @sha_speed1
+	rotation_speed = 0.8
+	acceleration = 1
+
+	shield_damage = 3
+
+	ship_behavior = "fighters_behavior"
+	icon = "GFX_ship_part_shadow_strike_craft_scout_1"
+	icon_frame = 1
+	component_set = "SHADOW_SCOUT_HANGAR_1"
+	upgrades_to = "SHADOW_STRIKE_CRAFT_HANGAR_1"
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense carrier }
+	point_defence_targets = { "strike_craft" }
+			
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+}
+
+strike_craft_component_template = {
+	key = "SHADOW_STRIKE_CRAFT_HANGAR_1"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_1"
+
+	power = @sha_power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t3_cost
+		}
+		upkeep = {
+			energy = @sha_l_t3_upkeep_energy
+			alloys = @sha_l_t3_upkeep_alloys
+		}
+	}
+
+	count = @sha_count
+	regeneration_per_day = @sha_regen
+	launch_time = @sha_launch_time
+
+	damage = { min = 8 max = 20 }
+	cooldown = 2.3
+	range = @sha_attack_range
+	engagement_range = @sha_engagement_range
+	accuracy = 1.00
+	tracking = 0.80
+
+	health = 45
+	armor = 45
+	shield = 0
+	evasion = 0.65
+
+	speed = @sha_speed2
+	rotation_speed = 0.8
+	acceleration = 1
+
+	shield_damage = 3
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "GFX_ship_part_shadow_strike_craft_fighter_1"
+	icon_frame = 1
+	component_set = "SHADOW_STRIKE_CRAFT_HANGAR_1"
+	prerequisites = { "tech_strike_craft_1" }
+	upgrades_to = "SHADOW_STRIKE_CRAFT_HANGAR_2"
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense carrier }
+	point_defence_targets = { "strike_craft" }
+		
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+}
+
+strike_craft_component_template = {
+	key = "SHADOW_STRIKE_CRAFT_HANGAR_2"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_2"
+
+	power = @sha_power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t4_cost
+		}
+		upkeep = {
+			energy = @sha_l_t4_upkeep_energy
+			alloys = @sha_l_t4_upkeep_alloys
+		}
+	}
+
+	count = @sha_count
+	regeneration_per_day = @sha_regen
+	launch_time = @sha_launch_time
+
+	damage = { min = 10 max = 26 }
+	cooldown = 2.3
+	range = @sha_attack_range
+	engagement_range = @sha_engagement_range
+	accuracy = 1.00
+	tracking = 0.90
+
+	health = 60
+	armor = 60
+	shield = 0
+	evasion = 0.80
+
+	speed = @sha_speed3
+	rotation_speed = 0.8
+	acceleration = 1
+
+	shield_damage = 3
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "GFX_ship_part_shadow_strike_craft_fighter_2"
+	icon_frame = 1
+	component_set = "SHADOW_STRIKE_CRAFT_HANGAR_2"
+	prerequisites = { "tech_strike_craft_2" }
+	upgrades_to = "SHADOW_STRIKE_CRAFT_HANGAR_3"
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense carrier }
+	point_defence_targets = { "strike_craft" }
+		
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+}
+
+strike_craft_component_template = {
+	key = "SHADOW_STRIKE_CRAFT_HANGAR_3"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_3"
+
+	power = @sha_power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t5_cost
+		}
+		upkeep = {
+			energy = @sha_l_t5_upkeep_energy
+			alloys = @sha_l_t5_upkeep_alloys
+		}
+	}
+
+	count = @sha_count
+	regeneration_per_day = @sha_regen
+	launch_time = @sha_launch_time
+
+	damage = { min = 12 max = 34 }
+	cooldown = 2.3
+	range = @sha_attack_range
+	engagement_range = @sha_engagement_range
+	accuracy = 1.00
+	tracking = 1.00
+
+	health = 70
+	armor = 70
+	shield = 0
+	evasion = 0.80
+
+	speed = @sha_speed4
+	rotation_speed = 0.8
+	acceleration = 1
+
+	shield_damage = 3
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "GFX_ship_part_shadow_strike_craft_fighter_3"
+	icon_frame = 1
+	component_set = "SHADOW_STRIKE_CRAFT_HANGAR_3"
+	prerequisites = { "tech_strike_craft_3" }
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense carrier }
+	point_defence_targets = { "strike_craft" }
+		
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+}

@@ -1,0 +1,11 @@
+#Shadows
+
+SHA = {
+ 	shadows = {
+ 		name = Shadow
+ 		plural = Shadows
+ 		home_planet = "Z'ha'dum"
+ 		home_system = "Alpha Omega"
+ 		name_list = "SHADOW1"
+ 	}
+}

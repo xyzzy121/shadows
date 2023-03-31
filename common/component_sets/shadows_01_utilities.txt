@@ -1,0 +1,71 @@
+# Icons set here are the ones shown in component editor list.
+
+component_set = {
+	key = "SHADOW_ARMOR_1"
+
+	icon = "GFX_ship_part_shadow_armor_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_ARMOR_2"
+
+	icon = "GFX_ship_part_shadow_armor_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_ARMOR_3"
+
+	icon = "GFX_ship_part_shadow_armor_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_ARMOR_4"
+
+	icon = "GFX_ship_part_shadow_armor_4"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SHADOW_ARMOR_5"
+
+	icon = "GFX_ship_part_shadow_armor_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AUTO_SHADOW_REPAIR_01"
+
+	icon = "GFX_ship_part_shadow_auto_repair_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AUTO_SHADOW_REPAIR_02"
+
+	icon = "GFX_ship_part_shadow_auto_repair_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AUTO_SHADOW_REPAIR_03"
+
+	icon = "GFX_ship_part_shadow_auto_repair_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AUTO_SHADOW_REPAIR_04"
+
+	icon = "GFX_ship_part_shadow_auto_repair_4"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AUTO_SHADOW_REPAIR_05"
+
+	icon = "GFX_ship_part_shadow_auto_repair_5"
+	icon_frame = 1
+}

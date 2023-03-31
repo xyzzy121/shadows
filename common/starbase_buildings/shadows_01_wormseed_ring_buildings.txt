@@ -1,0 +1,213 @@
+wormseed_ring_minerals_hub = {
+	icon = "GFX_orbitalring_mineral_hub"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mineral_purification_2 }
+		is_wormseed_ring = yes
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+			minerals = 100
+			sr_living_metal = 10
+			sentm = 50
+		}
+		upkeep = {
+			energy = 10
+			sr_living_metal = 1
+		}
+		produces = {
+			minerals = 25
+		}
+	}
+
+	show_in_tech = "tech_mineral_purification_2"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 50
+	}
+}
+
+wormseed_ring_energy_hub = {
+	icon = "GFX_orbitalring_energy_hub"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_power_hub_2 }
+		is_wormseed_ring = yes
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+			minerals = 100
+			sr_living_metal = 10
+			sentm = 50
+		}
+		produces = {
+			energy = 25
+		}
+		
+	}
+
+	show_in_tech = "tech_power_hub_2"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 50
+	}
+}
+wormseed_ring_resource_hub = {
+	icon = "GFX_wormseed_ring_resource_hub"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { 
+		has_technology = tech_mine_volatile_motes
+		has_technology = tech_mine_exotic_gases
+		has_technology = tech_mine_rare_crystals
+		}
+		is_wormseed_ring = yes
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+			minerals = 100
+			sr_living_metal = 50
+			influence = 300
+		}
+
+		upkeep = {
+		    food = 15
+			energy = 15
+			sr_living_metal = 1
+		}
+		produces = {
+			volatile_motes = 4
+			rare_crystals = 4
+			exotic_gases = 4
+		}
+	}
+
+	show_in_tech = "tech_mine_volatile_motes"
+	show_in_tech = "tech_mine_exotic_gases"
+	show_in_tech = "tech_mine_rare_crystals"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 60
+	}
+}
+
+wormseed_ring_research_hub = {
+	icon = "GFX_wormseed_ring_research_hub"
+	construction_days = 360
+
+	potential = {
+		is_wormseed_ring = yes
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+			minerals = 100
+			sr_living_metal = 50
+			influence = 300
+		}
+
+		upkeep = {
+		    food = 15
+			energy = 15
+		}
+		produces = {
+			physics_research = 20
+			society_research = 20
+			engineering_research = 20
+		}
+	}
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 0
+	}
+}
+
+wormseed_slumber_chambers = {
+	icon = "GFX_spaceport_module_crew_quarters"
+	construction_days = 180
+	potential = {
+		is_wormseed_ring = yes
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 500
+			sr_living_metal = 100
+		}
+
+		upkeep = {
+		nanites = 2
+	    energy = 10
+		}
+	}
+
+	orbit_modifier = {
+		ship_orbit_upkeep_mult = -1
+	}
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
+wormseed_alloys_hub = {
+	icon = "GFX_orbitalring_alloy_hub"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_alloys_2 }
+		is_wormseed_ring = yes
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 300
+			sr_living_metal = 100
+		}
+
+		upkeep = {
+			energy = 10
+		}
+		produces = {
+			alloys = 25
+		}
+	}
+
+	show_in_tech = "tech_alloys_2"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 60
+	}
+}

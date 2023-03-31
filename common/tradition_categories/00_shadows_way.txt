@@ -1,0 +1,32 @@
+#tradition_christmas = {
+#	adoption_bonus = "tr_christmas_adopt"		# required; key of tradition that serves as adoption bonus
+#	finish_bonus = "tr_christmas_finish"		# required; key of tradition that serves as adoption bonus; cannot have cost
+#	traditions = {								# list of tradition keys in this category; adoption and finish bonus are added automatically
+#		"tr_my_santa_claus_tradition"
+#		...
+#	}
+#}
+tradition_shadows_way = {
+	tree_template = "tree_111_11"
+	adoption_bonus = "tr_shadows_way_adopt"
+	finish_bonus = "tr_shadows_way_finish"
+	traditions = {
+		"tr_shadows_way_1"
+		"tr_shadows_way_2"
+		"tr_shadows_way_3"
+		"tr_shadows_way_4"
+		"tr_shadows_way_5"
+	}
+
+	potential = {
+		has_origin = origin_shadows
+	}
+	
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			has_valid_civic = civic_shadows1
+		}	
+	}
+}

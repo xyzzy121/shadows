@@ -1,0 +1,43 @@
+######### PLACEHOLDERS #################
+
+########## WEAPONS SFX ############
+
+############ CLOSE WEAPONS SFX
+soundeffect = {
+	name = shadow_beam
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = shadow_beam
+	}
+	is3d = yes
+	max_audible = 4
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.8
+	fade_out = 0.2
+}
+soundeffect = {
+	name = shadow_beam_hit
+	falloff = "falloff_weapons_close"
+	sounds = {
+		sound = shadow_beam_hit
+	} 
+	is3d = yes
+	max_audible = 2
+	max_audible_behaviour = fail
+	delay_random_offset = { 0.0 0.5 }
+	volume_random_offset = { 0.0 0.15 }
+	volume = 0.1
+	fade_out = 0.2
+}
+soundeffect = {
+	name = shadow_select_fleet
+	sounds = {
+		sound = shadow_select_fleet
+	}
+	volume = 0.9
+	fade_out = 0.3
+	max_audible = 2
+	max_audible_behaviour = fail
+}

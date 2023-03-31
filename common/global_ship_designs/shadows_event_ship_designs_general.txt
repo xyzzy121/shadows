@@ -1,0 +1,86 @@
+# Ancient Shadow Ship
+ship_design = {
+	name = "NAME_ShadowCrab"
+	ship_size = titan
+	is_event_design = yes
+	section = {
+		template = "TITAN_BOW"
+		slot = "mid"
+		
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_SHADOW_ARMOR_1"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_SHADOW_ARMOR_1"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_SHADOW_ARMOR_1"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_SHADOW_ARMOR_1"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_SHADOW_ARMOR_1"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_SHADOW_ARMOR_1"
+		}
+	}	
+	section = {
+		template = "TITAN_MID"
+		slot = "mid"
+
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_SHADOW_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_SHADOW_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "LARGE_SHADOW_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_SHADOW_LASER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_SHADOW_ARMOR_1"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_SHADOW_ARMOR_1"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_SHADOW_ARMOR_1"
+		}
+	}
+	section = {
+		template = "TITAN_STERN"
+		slot = "mid"
+		
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_SHADOW_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_SHADOW_LASER"
+		}
+	}
+	required_component="SHADOW_HYPER_DRIVE_2"
+	required_component="SHIP_SHADOW_THRUSTER_3"
+	required_component="SHADOW_SENSOR_2"
+	required_component="TITAN_SHADOW_FISSION_REACTOR"
+	required_component="SHADOW_COMBAT_COMPUTER_ARTILLERY_DEFAULT"
+}

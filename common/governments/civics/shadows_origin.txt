@@ -1,0 +1,70 @@
+origin_shadows = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/shadows_origin_icon_01.dds"
+    picture = GFX_shadows_origin_01
+
+    starting_colony = pc_zah
+	max_once_global = yes
+	non_colonizable_planet_class_neighbor = yes
+	initializers = { zah_system_initializer }
+
+    possible = {
+        authority = {
+        }
+		species_class = { value = SHA }
+		civics = { value = civic_shadows1 }
+    }
+	
+	traits = {
+		trait = trait_shadow
+	}	
+
+    modifier = {
+	    ship_interstellar_speed_mult = 0.10
+		ship_speed_mult = 0.10
+		ship_hull_regen_add_perc = 0.1
+		ship_armor_regen_add_perc = 0.1
+    }
+
+    random_weight = {
+        base = 0
+    }
+
+    advanced_start = no
+    description = "origin_tooltip_shadows"
+}
+
+origin_shadows2 = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/shadows_origin_icon_01.dds"
+    picture = GFX_shadows_origin_01
+
+    starting_colony = pc_zah
+	max_once_global = yes
+	non_colonizable_planet_class_neighbor = yes
+
+    possible = {
+        authority = {
+        }
+		species_class = { value = SHA }
+		civics = { value = civic_shadows1 }
+    }
+	
+	traits = {
+		trait = trait_shadow
+	}	
+
+    modifier = {
+	    ship_interstellar_speed_mult = 0.10
+		ship_speed_mult = 0.10
+		ship_hull_regen_add_perc = 0.25
+		ship_armor_regen_add_perc = 0.25
+    }
+
+    random_weight = {
+        base = 0
+    }
+
+    advanced_start = no
+    description = "origin_tooltip_shadows2"
+}

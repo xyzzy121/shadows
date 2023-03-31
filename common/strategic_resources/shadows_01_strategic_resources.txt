@@ -1,0 +1,18 @@
+### System Resources
+
+#allow_deficit = no #default yes // only implemented for tech resources
+
+time = {
+#	deficit_situation = total_panic		#TODO TODO: avoid at all costs
+}
+
+
+### Shadow Resources
+#Sentience Module
+sentm = {
+	category = other
+
+	ai_weight = {
+		weight = 1
+	}
+}

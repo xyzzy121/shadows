@@ -1,0 +1,1454 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes.
+#############
+#	POWER	#
+#############
+
+@corvette_power_1 = 150
+@corvette_power_2 = 200
+@corvette_power_3 = 260
+@corvette_power_4 = 340
+@corvette_power_5 = 440
+@corvette_power_6 = 570
+
+@destroyer_power_1 = 280
+@destroyer_power_2 = 360
+@destroyer_power_3 = 480
+@destroyer_power_4 = 640
+@destroyer_power_5 = 860
+@destroyer_power_6 = 1100
+
+@cruiser_power_1 = 560
+@cruiser_power_2 = 720
+@cruiser_power_3 = 960
+@cruiser_power_4 = 1240
+@cruiser_power_5 = 1600
+@cruiser_power_6 = 2060
+
+@battleship_power_1 = 1100
+@battleship_power_2 = 1440
+@battleship_power_3 = 1900
+@battleship_power_4 = 2500
+@battleship_power_5 = 3100
+@battleship_power_6 = 4000
+
+@titan_power_1 = 2200
+@titan_power_2 = 2900
+@titan_power_3 = 3800
+@titan_power_4 = 5000
+@titan_power_5 = 6400
+@titan_power_6 = 8400
+
+@colossus_power = 20000
+
+@starbase_power_1 = 3300
+@starbase_power_2 = 4340
+@starbase_power_3 = 5700
+@starbase_power_4 = 7500
+@starbase_power_5 = 9100
+@starbase_power_6 = 12400
+
+@platform_power_1 = 400
+@platform_power_2 = 520
+@platform_power_3 = 680
+@platform_power_4 = 880
+@platform_power_5 = 1150
+@platform_power_6 = 1500
+
+#############
+#	COST	#
+#############
+
+@corvette_cost_1 = 20
+@corvette_cost_2 = 26
+@corvette_cost_3 = 34
+@corvette_cost_4 = 44
+@corvette_cost_5 = 56
+@corvette_cost_6 = 74
+
+@destroyer_cost_1 = 40
+@destroyer_cost_2 = 52
+@destroyer_cost_3 = 68
+@destroyer_cost_4 = 88
+@destroyer_cost_5 = 112
+@destroyer_cost_6 = 148
+
+@cruiser_cost_1 = 80
+@cruiser_cost_2 = 104
+@cruiser_cost_3 = 136
+@cruiser_cost_4 = 176
+@cruiser_cost_5 = 224
+@cruiser_cost_6 = 296
+
+@battleship_cost_1 = 160
+@battleship_cost_2 = 208
+@battleship_cost_3 = 272
+@battleship_cost_4 = 352
+@battleship_cost_5 = 448
+@battleship_cost_6 = 592
+
+@titan_cost_1 = 320
+@titan_cost_2 = 416
+@titan_cost_3 = 544
+@titan_cost_4 = 704
+@titan_cost_5 = 896
+@titan_cost_6 = 1192
+
+@colossus_cost_1 = 0
+
+@platform_cost_1 = 40
+@platform_cost_2 = 52
+@platform_cost_3 = 68
+@platform_cost_4 = 88
+@platform_cost_5 = 112
+@platform_cost_6 = 148
+
+#############
+# REACTORS #
+#############
+
+########################
+# Fission Reactors
+########################
+
+utility_component_template = {
+	key = "CORVETTE_SHADOW_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_1"
+	icon_frame = 1
+	power = @corvette_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @corvette_cost_1
+		}
+		upkeep = {
+			energy = 0.20
+			alloys = 0.02
+		}
+	}
+
+	prerequisites = { "tech_shadow_fission_power" }
+	component_set = "power_core"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+	upgrades_to = "CORVETTE_SHADOW_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHADOW_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_1"
+	icon_frame = 1
+	power = @destroyer_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost_1
+		}
+		upkeep = {
+			energy = 0.40
+			alloys = 0.04
+		}
+	}
+
+	prerequisites = { "tech_shadow_fission_power" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	upgrades_to = "DESTROYER_SHADOW_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHADOW_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_1"
+	icon_frame = 1
+	power = @cruiser_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_1
+		}
+		upkeep = {
+			energy = 0.80
+			alloys = 0.08
+		}
+	}
+
+	prerequisites = { "tech_shadow_fission_power" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	upgrades_to = "CRUISER_SHADOW_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHADOW_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_1"
+	icon_frame = 1
+	power = @battleship_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost_1
+		}
+		upkeep = {
+			energy = 1.6
+			alloys = 0.16
+		}
+	}
+
+	prerequisites = { "tech_shadow_fission_power" }
+	component_set = "power_core"
+	size_restriction = { battleship offspring_battleship }
+	upgrades_to = "BATTLESHIP_SHADOW_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHADOW_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_1"
+	icon_frame = 1
+	power = @titan_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost_1
+		}
+		upkeep = {
+			energy = 3.20
+			alloys = 0.32
+		}
+	}
+
+	prerequisites = { "tech_shadow_fission_power" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_SHADOW_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_SHADOW_FISSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_1"
+	icon_frame = 1
+	power = @platform_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @platform_cost_1
+		}
+		upkeep = {
+			energy = 0.40
+			alloys = 0.04
+		}
+	}
+
+	prerequisites = { "tech_shadow_fission_power" }
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	component_set = "power_core"
+	upgrades_to = "PLATFORM_SHADOW_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_SHADOW_FISSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_1"
+	icon_frame = 1
+	power = @starbase_power_1
+
+	prerequisites = { "tech_shadow_fission_power" }
+	class_restriction = { shipclass_starbase }
+	component_set = "power_core"
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+		wormseed_ring_tier_1
+        wormseed_ring_tier_2
+        wormseed_ring_tier_3
+	}
+	upgrades_to = "STARBASE_SHADOW_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+########################
+# Fusion Reactors
+########################
+
+utility_component_template = {
+	key = "CORVETTE_SHADOW_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_2"
+	icon_frame = 1
+	power = @corvette_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @corvette_cost_2
+		}
+		upkeep = {
+			energy = 0.26
+			alloys = 0.026
+		}
+	}
+
+	prerequisites = { "tech_shadow_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+	upgrades_to = "CORVETTE_SHADOW_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHADOW_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_2"
+	icon_frame = 1
+	power = @destroyer_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost_2
+		}
+		upkeep = {
+			energy = 0.52
+			alloys = 0.052
+		}
+	}
+
+	prerequisites = { "tech_shadow_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	upgrades_to = "DESTROYER_SHADOW_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHADOW_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_2"
+	icon_frame = 1
+	power = @cruiser_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_2
+		}
+		upkeep = {
+			energy = 1.04
+			alloys = 0.104
+		}
+	}
+
+	prerequisites = { "tech_shadow_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	upgrades_to = "CRUISER_SHADOW_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHADOW_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_2"
+	icon_frame = 1
+	power = @battleship_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost_2
+		}
+		upkeep = {
+			energy = 2.08
+			alloys = 0.208
+		}
+	}
+
+	prerequisites = { "tech_shadow_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { battleship offspring_battleship }
+	upgrades_to = "BATTLESHIP_SHADOW_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHADOW_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_2"
+	icon_frame = 1
+	power = @titan_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost_2
+		}
+		upkeep = {
+			energy = 4.16
+			alloys = 0.416
+		}
+	}
+
+	prerequisites = { "tech_shadow_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_SHADOW_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_SHADOW_FUSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_2"
+	icon_frame = 1
+	power = @platform_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @platform_cost_2
+		}
+		upkeep = {
+			energy = 0.52
+			alloys = 0.052
+		}
+	}
+
+	prerequisites = { "tech_shadow_fusion_power" }
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	component_set = "power_core"
+	upgrades_to = "PLATFORM_SHADOW_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_SHADOW_FUSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_2"
+	icon_frame = 1
+	power = @starbase_power_2
+
+	prerequisites = { "tech_shadow_fusion_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+		wormseed_ring_tier_1
+        wormseed_ring_tier_2
+        wormseed_ring_tier_3
+	}
+	upgrades_to = "STARBASE_SHADOW_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+########################
+# Cold Fusion Reactors
+########################
+
+utility_component_template = {
+	key = "CORVETTE_SHADOW_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_3"
+	icon_frame = 1
+	power = @corvette_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @corvette_cost_3
+		}
+		upkeep = {
+			energy = 0.34
+			alloys = 0.034
+		}
+	}
+
+	prerequisites = { "tech_shadow_cold_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+	upgrades_to = "CORVETTE_SHADOW_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHADOW_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_3"
+	icon_frame = 1
+	power = @destroyer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost_3
+		}
+		upkeep = {
+			energy = 0.68
+			alloys = 0.068
+		}
+	}
+
+	prerequisites = { "tech_shadow_cold_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	upgrades_to = "DESTROYER_SHADOW_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHADOW_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_3"
+	icon_frame = 1
+	power = @cruiser_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_3
+		}
+		upkeep = {
+			energy = 1.35
+			alloys = 0.135
+		}
+	}
+
+	prerequisites = { "tech_shadow_cold_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	upgrades_to = "CRUISER_SHADOW_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHADOW_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_3"
+	icon_frame = 1
+	power = @battleship_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost_3
+		}
+		upkeep = {
+			energy = 2.70
+			alloys = 0.270
+		}
+	}
+
+	prerequisites = { "tech_shadow_cold_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { battleship offspring_battleship }
+	upgrades_to = "BATTLESHIP_SHADOW_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHADOW_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_3"
+	icon_frame = 1
+	power = @titan_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost_3
+		}
+		upkeep = {
+			energy = 5.40
+			alloys = 0.540
+		}
+	}
+
+	prerequisites = { "tech_shadow_cold_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_SHADOW_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_SHADOW_COLD_FUSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_3"
+	icon_frame = 1
+	power = @platform_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @platform_cost_3
+		}
+		upkeep = {
+			energy = 0.52
+			alloys = 0.052
+		}
+	}
+
+	prerequisites = { "tech_shadow_cold_fusion_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	upgrades_to = "PLATFORM_SHADOW_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_SHADOW_COLD_FUSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_3"
+	icon_frame = 1
+	power = @starbase_power_3
+
+	prerequisites = { "tech_shadow_cold_fusion_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+		wormseed_ring_tier_1
+        wormseed_ring_tier_2
+        wormseed_ring_tier_3
+	}
+	upgrades_to = "STARBASE_SHADOW_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+########################
+# Antimatter Reactors
+########################
+
+utility_component_template = {
+	key = "CORVETTE_SHADOW_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_4"
+	icon_frame = 1
+	power = @corvette_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @corvette_cost_4
+		}
+		upkeep = {
+			energy = 0.44
+			alloys = 0.044
+		}
+	}
+
+	prerequisites = { "tech_shadow_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+	upgrades_to = "CORVETTE_SHADOW_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHADOW_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_4"
+	icon_frame = 1
+	power = @destroyer_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost_4
+		}
+		upkeep = {
+			energy = 0.88
+			alloys = 0.088
+		}
+	}
+
+	prerequisites = { "tech_shadow_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	upgrades_to = "DESTROYER_SHADOW_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHADOW_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_4"
+	icon_frame = 1
+	power = @cruiser_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_4
+		}
+		upkeep = {
+			energy = 1.76
+			alloys = 0.176
+		}
+	}
+
+	prerequisites = { "tech_shadow_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	upgrades_to = "CRUISER_SHADOW_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHADOW_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_4"
+	icon_frame = 1
+	power = @battleship_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost_4
+		}
+		upkeep = {
+			energy = 3.51
+			alloys = 0.351
+		}
+	}
+
+	prerequisites = { "tech_shadow_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { battleship offspring_battleship }
+	upgrades_to = "BATTLESHIP_SHADOW_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHADOW_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_4"
+	icon_frame = 1
+	power = @titan_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost_4
+		}
+		upkeep = {
+			energy = 3.51
+			alloys = 0.351
+		}
+	}
+
+	prerequisites = { "tech_shadow_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_SHADOW_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_SHADOW_ANTIMATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_4"
+	icon_frame = 1
+	power = @platform_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @platform_cost_4
+		}
+		upkeep = {
+			energy = 0.88
+			alloys = 0.088
+		}
+	}
+
+	prerequisites = { "tech_shadow_antimatter_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+	upgrades_to = "PLATFORM_SHADOW_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_SHADOW_ANTIMATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_4"
+	icon_frame = 1
+	power = @starbase_power_4
+
+	prerequisites = { "tech_shadow_antimatter_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+		wormseed_ring_tier_1
+        wormseed_ring_tier_2
+        wormseed_ring_tier_3
+	}
+	upgrades_to = "STARBASE_SHADOW_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+########################
+# Zero-Point Reactors
+########################
+
+utility_component_template = {
+	key = "CORVETTE_SHADOW_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_5"
+	icon_frame = 1
+	power = @corvette_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @corvette_cost_5
+		}
+		upkeep = {
+			energy = 0.57
+			alloys = 0.057
+		}
+	}
+
+	prerequisites = { "tech_shadow_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHADOW_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_5"
+	icon_frame = 1
+	power = @destroyer_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost_5
+		}
+		upkeep = {
+			energy = 1.14
+			alloys = 0.114
+		}
+	}
+
+	prerequisites = { "tech_shadow_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHADOW_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_5"
+	icon_frame = 1
+	power = @cruiser_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_5
+		}
+		upkeep = {
+			energy = 2.29
+			alloys = 0.229
+		}
+	}
+
+	prerequisites = { "tech_shadow_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHADOW_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_5"
+	icon_frame = 1
+	power = @battleship_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost_5
+		}
+		upkeep = {
+			energy = 4.56
+			alloys = 0.456
+		}
+	}
+
+	prerequisites = { "tech_shadow_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { battleship offspring_battleship }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHADOW_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_5"
+	icon_frame = 1
+	power = @titan_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost_5
+		}
+		upkeep = {
+			energy = 9.12
+			alloys = 0.912
+		}
+	}
+
+	prerequisites = { "tech_shadow_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { titan }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_SHADOW_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_5"
+	icon_frame = 1
+	power = @colossus_power
+
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_SHADOW_ZERO_POINT_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_5"
+	icon_frame = 1
+	power = @platform_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @platform_cost_5
+		}
+		upkeep = {
+			energy = 1.14
+			alloys = 0.114
+		}
+	}
+
+	prerequisites = { "tech_shadow_zero_point_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_SHADOW_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_reactor_5"
+	icon_frame = 1
+	power = @cruiser_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_5
+		}
+	}
+	
+	prerequisites = { "tech_shadow_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_SHADOW_ZERO_POINT_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_reactor_5"
+	icon_frame = 1
+	power = @starbase_power_5
+
+	prerequisites = { "tech_shadow_zero_point_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+		wormseed_ring_tier_1
+        wormseed_ring_tier_2
+        wormseed_ring_tier_3
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+####################
+# Engimatic Reactors
+####################
+
+utility_component_template = {
+	key = "CORVETTE_SHADOW_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_dark_matter_power_core"
+	icon_frame = 1
+	power = @corvette_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @corvette_cost_6
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			energy = 0.37
+			alloys = 0.037
+		}
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHADOW_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_dark_matter_power_core"
+	icon_frame = 1
+	power = @destroyer_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost_6
+			sr_dark_matter = 2
+		}
+		upkeep = {
+			energy = 0.74
+			alloys = 0.074
+		}
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHADOW_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_dark_matter_power_core"
+	icon_frame = 1
+	power = @cruiser_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_6
+			sr_dark_matter = 4
+		}
+		upkeep = {
+			energy = 1.48
+			alloys = 0.148
+		}
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHADOW_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_dark_matter_power_core"
+	icon_frame = 1
+	power = @battleship_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost_6
+			sr_dark_matter = 8
+		}
+		upkeep = {
+			energy = 2.98
+			alloys = 0.298
+		}
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { battleship offspring_battleship }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHADOW_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_dark_matter_power_core"
+	icon_frame = 1
+	power = @titan_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost_6
+			sr_dark_matter = 16
+		}
+		upkeep = {
+			energy = 5.93
+			alloys = 0.593
+		}
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { titan }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_SHADOW_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_dark_matter_power_core"
+	icon_frame = 1
+	power = @colossus_power
+	resources = {
+		category = ship_components
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_SHADOW_DARK_MATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_dark_matter_power_core"
+	icon_frame = 1
+	power = @platform_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @platform_cost_6
+			sr_dark_matter = 4
+		}
+		upkeep = {
+			energy = 0.74
+			alloys = 0.074
+		}
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_SHADOW_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_shadow_dark_matter_power_core"
+	icon_frame = 1
+	power = @cruiser_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost_6
+			sr_dark_matter = 8
+		}
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_SHADOW_DARK_MATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_shadow_dark_matter_power_core"
+	icon_frame = 1
+	power = @starbase_power_6
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+		wormseed_ring_tier_1
+        wormseed_ring_tier_2
+        wormseed_ring_tier_3
+	}
+
+	ai_weight = {
+		weight = 6
+	}
+}

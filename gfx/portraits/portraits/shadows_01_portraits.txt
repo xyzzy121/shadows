@@ -1,0 +1,172 @@
+portraits = {
+	sha1 = {
+		texturefile = "gfx/models/portraits/shadows/sha1.dds"
+	}
+	sha2 = {
+		texturefile = "gfx/models/portraits/shadows/sha2.dds"
+	}
+	
+	sha3 = {
+		texturefile = "gfx/models/portraits/shadows/sha3.dds"
+	}
+	sha4 = {
+		texturefile = "gfx/models/portraits/shadows/sha4.dds"
+	}
+}
+
+portrait_groups = {
+	shadow = {
+		default = sha1
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = { ruler = { gender = male } }
+				portraits = {
+					sha1
+				}
+			}
+			add = {
+				trigger = { ruler = { gender = female } }
+				portraits = {
+					sha1
+				}
+			}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					sha1
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					sha1
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					sha1
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					sha1
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					sha1
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					sha1
+				}
+			}
+		}
+	}	
+}
+portrait_groups = {
+	shadow3 = {
+		default = sha3
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = { ruler = { gender = male } }
+				portraits = {
+					sha3
+				}
+			}
+			add = {
+				trigger = { ruler = { gender = female } }
+				portraits = {
+					sha3
+				}
+			}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					sha3
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					sha3
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					sha4
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					sha4
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					sha3
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					sha3
+				}
+			}
+		}
+	}	
+}

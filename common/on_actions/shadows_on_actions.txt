@@ -1,0 +1,91 @@
+
+### SHADOWS ON_ACTIONS
+
+# Triggers when the game starts
+
+empire_init_capital_planet = {
+	events = {
+		# game_start.12 # vanilla starting buildings, districts & pops
+		shadows_game_start.1001 # spawns deposits for origins
+	}
+}
+
+on_game_start_country = {
+	events = {
+#		shadows_game_start.1002 # Add civic catalytic_processing
+		shadows_game_start.1003 # Add sentinel resource
+		#shadows_game_start.1004 # Add titan
+		shadows_game_start.1005 # Ancient Ship Project
+	}
+}
+
+# A war has started
+#on_entering_war = {
+#	events = {
+#		shadows_ac.0001
+#	}
+#}
+
+# A war is beginning
+#on_war_beginning = {
+#	events = {
+#		shadows_ac.0001
+#	}
+#}
+
+
+# A war has ended
+#on_war_ended = {
+#	events = {
+#		shadows_ac.0002
+#	}
+#}
+
+#Gives Sentience Module when destroying ships
+on_ship_destroyed_perp = {
+	events = {	
+		shadows_ac.0003
+	}
+}
+
+# War without mod
+on_monthly_pulse = {
+	events = {
+		shadows_ac.0004
+	}
+}
+
+#Agents of Chaos Adopt effect
+on_entering_battle = {
+	events = {
+		shadows_ac.0005	
+	}
+}
+
+#Agents of Chaos Adopt effect
+on_space_battle_won = {
+	events = {
+		shadows_ac.0006
+		
+		shadows_ac.0007
+	}
+}
+
+on_tech_increased = {
+	events = {
+		shadows_ac.1001
+	}
+}
+
+#on_monthly_pulse = {
+#	events = {
+#		shadows_ac.0008
+#	}
+#}
+
+#Sent modules from purging
+on_pop_purged = {
+	events = {
+		shadows_ac.1002
+	}
+}

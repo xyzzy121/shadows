@@ -1,0 +1,23 @@
+##########################################################################
+# HARD FIXED STATE - DO NOT REMOVE OR RENAME ANY OF THESE
+##########################################################################
+
+#triggered_opinion_both_hive_mind_shadows = {
+#	trigger = {
+#		has_authority = auth_hive_mind
+#		FROM = {
+#			has_valid_civic = "civic_shadows1"
+#		}
+#	}
+#
+#	opinion = {
+#		base = -30
+#	}
+#}
+
+# Agents of Chaos
+opinion_agents_of_chaos = {
+	opinion = {
+		base = -5000
+	}
+}

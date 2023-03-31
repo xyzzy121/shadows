@@ -1,0 +1,244 @@
+################
+# Orbital ring #
+################
+
+@build_block_orbital_ring = 20
+@orbital_ring_formation_priority = 1
+
+wormseed_ring_tier_1 = {
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 1000
+		starbase_defense_platform_capacity_add = 2
+		starbase_module_capacity_add = 2
+		starbase_building_capacity_add = 2
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 1.0
+		ship_weapon_range_mult = 1.0
+	}
+	max_hitpoints = 5000
+	base_buildtime = 720
+	resources = {
+		category = starbase_stations
+		cost = {
+			alloys = 1000
+			sr_living_metal = 100
+			sentm = 100
+			influence = 500
+		}
+		upkeep = {
+			energy = 2
+		}
+		produces = {
+			alloys = 5
+			sr_living_metal = 1
+			nanites = 1
+		}
+	}
+
+	combat_size_multiplier = 5
+	size_multiplier = 4
+	fleet_slot_size = 2
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+	}
+
+	potential_construction = {
+		# This is build through a megastructure
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+
+	is_designable = no
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = no
+	can_disable = yes
+	flip_control_on_disable = no
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	class = shipclass_starbase
+
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	build_block_radius = @build_block_orbital_ring
+	formation_priority = @orbital_ring_formation_priority
+	icon_frame = 7
+	scales_with_planet = yes
+	graphical_culture = { "shadows_01" }
+}
+
+wormseed_ring_tier_2 = {
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	modifier = {
+		country_base_nanites_produces_add = 1
+		country_base_sr_living_metal_produces_add = 1
+		country_base_alloys_produces_add = 5
+		ship_evasion_mult = -1
+		ship_armor_add = 2000
+		starbase_defense_platform_capacity_add = 4
+		starbase_module_capacity_add = 3
+		starbase_building_capacity_add = 4
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 1.0
+		ship_weapon_range_mult = 1.50
+	}
+	max_hitpoints = 10000
+	base_buildtime = 900
+	resources = {
+		category = starbase_stations
+		cost = {
+			alloys = 1500
+			sr_living_metal = 150
+			sentm = 250
+			influence = 700
+		}
+		upkeep = {
+			energy = 3
+		}
+		produces = {
+			alloys = 10
+			sr_living_metal = 2
+			nanites = 2
+		}
+	}
+
+	combat_size_multiplier = 20
+	size_multiplier = 4
+	fleet_slot_size = 2
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+	}
+
+	potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+
+	is_designable = no
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = no
+	can_disable = yes
+	flip_control_on_disable = no
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	prerequisites = { "tech_starbase_4" }
+	class = shipclass_starbase
+
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	build_block_radius = @build_block_orbital_ring
+	formation_priority = @orbital_ring_formation_priority
+	icon_frame = 8
+	scales_with_planet = yes
+	graphical_culture = { "shadows_01" }
+}
+
+wormseed_ring_tier_3 = {
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	modifier = {
+		country_base_nanites_produces_add = 1
+		country_base_sr_living_metal_produces_add = 1
+		country_base_alloys_produces_add = 5
+		ship_evasion_mult = -1
+		ship_armor_add = 2000
+		starbase_defense_platform_capacity_add = 6
+		starbase_module_capacity_add = 4
+		starbase_building_capacity_add = 8
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 1.0
+		ship_weapon_range_mult = 2.0
+	}
+	max_hitpoints = 20000
+	base_buildtime = 1080
+	resources = {
+		category = starbase_stations
+		cost = {
+			alloys = 2000
+			sr_living_metal = 200
+			sentm = 500
+			influence = 1000
+		}
+
+		upkeep = {
+			energy = 4
+		}
+		produces = {
+			alloys = 15
+			sr_living_metal = 3
+			nanites = 3
+		}
+	}
+
+	combat_size_multiplier = 20
+	size_multiplier = 4
+	fleet_slot_size = 2
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+	}
+
+	potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+
+	is_designable = no
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = no
+	can_disable = yes
+	flip_control_on_disable = no
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	prerequisites = { "tech_starbase_5" }
+	class = shipclass_starbase
+
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	build_block_radius = @build_block_orbital_ring
+	formation_priority = @orbital_ring_formation_priority
+	icon_frame = 9
+	scales_with_planet = yes
+	graphical_culture = { "shadows_01" }
+}

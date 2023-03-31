@@ -1,0 +1,20 @@
+# See traditions/README.txt for format
+
+#################
+# ASCENSION PERKS
+#################
+
+ap_shadows_wormseed_ring = {
+	 potential = {
+		 has_origin = origin_shadows
+		 NOT = { has_ascension_perk = ap_shadows_wormseed_ring }
+	 }
+
+	 possible = {
+			 has_tradition = tr_shadows_way_finish
+	 }
+	 
+	 on_enabled = {
+		custom_tooltip = "allow_wormseed_ring"
+	}
+}

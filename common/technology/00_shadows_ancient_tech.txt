@@ -1,0 +1,278 @@
+# Techs for First Ones civic
+#Weapons
+tech_ancient_weapons_1 = {
+	area = physics
+	tier = 2
+	cost = @tier2cost3
+	category = { particles }
+	ai_update_type = military
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		ship_weapon_damage = 0.25
+		ship_military_upkeep_mult = 0.05
+		ship_military_cost_mult = 0.05
+	}
+}
+
+tech_ancient_weapons_2 = {
+	area = physics
+	tier = 3
+	cost = @tier3cost3
+	category = { particles }
+	ai_update_type = military
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_weapons_1" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		ship_weapon_damage = 0.25
+		ship_military_upkeep_mult = 0.05
+		ship_military_cost_mult = 0.05
+	}
+}
+
+tech_ancient_weapons_3 = {
+	area = physics
+	tier = 4
+	cost = @tier4cost3
+	category = { particles }
+	ai_update_type = military
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_weapons_2" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		ship_weapon_damage = 0.25
+		ship_military_upkeep_mult = 0.05
+		ship_military_cost_mult = 0.05
+	}
+}
+
+tech_ancient_weapons_4 = {
+	area = physics
+	tier = 5
+	cost = @tier5cost3
+	category = { particles }
+	ai_update_type = military
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_weapons_3" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		ship_weapon_damage = 0.25
+		ship_military_upkeep_mult = 0.05
+		ship_military_cost_mult = 0.05
+	}
+}
+
+#Defences
+tech_ancient_defence_1 = {
+	area = engineering
+	tier = 2
+	cost = @tier2cost3
+	category = { materials }
+	ai_update_type = military
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		ship_armor_mult = 0.25
+		ship_hull_mult = 0.25
+		ship_military_upkeep_mult = 0.10
+		ship_military_cost_mult = 0.10
+	}
+}
+
+tech_ancient_defence_2 = {
+	area = engineering
+	tier = 3
+	cost = @tier3cost3
+	category = { materials }
+	ai_update_type = military
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_defence_1" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		ship_armor_mult = 0.25
+		ship_hull_mult = 0.25
+		ship_military_upkeep_mult = 0.10
+		ship_military_cost_mult = 0.10
+	}
+}
+
+tech_ancient_defence_3 = {
+	area = engineering
+	tier = 4
+	cost = @tier4cost3
+	category = { materials }
+	ai_update_type = military
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_defence_2" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		ship_armor_mult = 0.25
+		ship_hull_mult = 0.25
+		ship_military_upkeep_mult = 0.10
+		ship_military_cost_mult = 0.10
+	}
+}
+
+tech_ancient_defence_4 = {
+	area = engineering
+	tier = 5
+	cost = @tier5cost3
+	category = { materials }
+	ai_update_type = military
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_defence_3" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		ship_armor_mult = 0.25
+		ship_hull_mult = 0.25
+		ship_military_upkeep_mult = 0.10
+		ship_military_cost_mult = 0.10
+	}
+}
+
+#Social
+
+tech_ancient_research_1 = {
+	area = society
+	tier = 1
+	cost = @tier1cost3
+	category = { psionics }
+	ai_update_type = all
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		country_physics_research_produces_mult = 0.25
+		country_society_research_produces_mult = 0.25
+		country_engineering_research_produces_mult = 0.25
+	}
+}
+
+tech_ancient_research_2 = {
+	area = society
+	tier = 2
+	cost = @tier2cost3
+	category = { psionics }
+	ai_update_type = all
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_research_1" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		country_physics_research_produces_mult = 0.25
+		country_society_research_produces_mult = 0.25
+		country_engineering_research_produces_mult = 0.25
+	}
+}
+
+tech_ancient_research_3 = {
+	area = society
+	tier = 3
+	cost = @tier3cost3
+	category = { psionics }
+	ai_update_type = all
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_research_2" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		country_physics_research_produces_mult = 0.25
+		country_society_research_produces_mult = 0.25
+		country_engineering_research_produces_mult = 0.25
+	}
+}
+
+tech_ancient_research_4 = {
+	area = society
+	tier = 4
+	cost = @tier4cost3
+	category = { psionics }
+	ai_update_type = all
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_research_3" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		country_physics_research_produces_mult = 0.25
+		country_society_research_produces_mult = 0.25
+		country_engineering_research_produces_mult = 0.25
+	}
+}
+
+tech_ancient_research_5 = {
+	area = society
+	tier = 5
+	cost = @tier5cost3
+	category = { psionics }
+	ai_update_type = all
+	start_tech = no
+	is_rare = yes
+	is_dangerous = no
+	prerequisites = { "tech_ancient_research_4" }
+	potential = {
+			has_valid_civic = civic_shadows2
+	}
+
+	modifier = {
+		country_physics_research_produces_mult = 0.25
+		country_society_research_produces_mult = 0.25
+		country_engineering_research_produces_mult = 0.25
+	}
+}

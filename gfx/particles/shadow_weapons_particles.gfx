@@ -1,0 +1,117 @@
+objectTypes = {
+
+
+	pdxparticle = {
+		name = "shadow_lance_windup_effect"
+		type = "shadow_lance_windup_effect"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "shadow_lance_muzzle_windup_effect"
+		type = "shadow_lance_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+	name = "small_shadow_plasma_missile_1_idle_particle"
+	type = "shadow_plasma_missile_1_idle_effect"
+	scale = 0.5
+    }
+	pdxparticle = {
+	name = "small_shadow_plasma_missile_1_idle_trail_particle"
+	type = "shadow_plasma_missile_1_idle_drop_effect"
+	scale = 0.5
+    }
+####################
+#	MUZZLE FLASHES
+####################
+	
+	pdxparticle = {
+	name = "small_shadow_plasma_missile_1_muzzle_particle"
+	type = "shadow_plasma_missile_1_muzzle_effect"
+	scale = 0.25
+    }
+	
+	pdxparticle = {
+		name = "shadow_laser_large_muzzle_particle"
+		type = "uv_laser_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "shadow_laser_medium_muzzle_particle"
+		type = "uv_laser_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "shadow_laser_small_muzzle_particle"
+		type = "uv_laser_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "shadow_lance_muzzle_particle"
+		type = "shadow_lance_muzzle"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "shadow_perdition_beam_muzzle_effect"
+		type = "shadow_perdition_beam_muzzle_effect"
+		
+		scale = 1.0
+	}
+			
+	pdxparticle = {
+		name = "shadow_perdition_beam_windup_effect"
+		type = "shadow_perdition_beam_windup_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "shadow_perdition_beam_muzzle_windup_effect"
+		type = "shadow_perdition_beam_muzzle_windup_effect"
+		
+		scale = 1.0
+	}
+
+####################
+#	HIT EFFECTS
+####################
+
+    pdxparticle = {
+	name = "small_shadow_plasma_missile_1_hit_effect"
+	type = "shadow_plasma_missile_1_hit_effect"
+	scale = 1.0
+    }
+
+	pdxparticle = {
+		name = "shadow_laser_small_hit_effect"
+		type = "uv_laser_hit_effect"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "shadow_laser_medium_hit_effect"
+		type = "uv_laser_hit_effect"
+		
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "shadow_laser_large_hit_effect"
+		type = "uv_laser_hit_effect"
+		  
+		scale = 1.0
+	}
+}

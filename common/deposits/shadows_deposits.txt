@@ -1,0 +1,145 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# blocked_modifier - applied to planet
+# constant_modifier - applied to planet always
+# station = station class in orbit to gather
+
+#Zahadum deposits
+sha_zah_cities = {
+	is_for_colonizable = yes
+	icon = d_ruins_large
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = 10
+		building_betharian_power_plant_max = 2
+		district_mining_max = 20
+		district_generator_max = 20
+		district_farming_max = 20
+		building_crystal_mines_max = 2
+		building_gas_extractors_max = 2
+		building_mote_harvesters_max = 2
+	}
+	
+	resources = {
+		produces = {
+			nanites = 1
+			sr_living_metal = 1
+			society_research = 25
+			physics_research = 25
+			engineering_research = 25
+		}
+	}
+}
+
+d_zah_ruins = {
+	time = 700
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+	icon = d_radioactive_wasteland
+
+	can_be_cleared = {
+		custom_tooltip = {
+			fail_text = has_ranger_lodge
+			planet = {
+				NOT = { has_building = building_ranger_lodge }
+			}
+		}
+	}
+
+	resources = {
+		category = deposit_blockers_natural
+		cost = {
+			food = 3000
+			energy = 3000
+			nanites = 25
+		}
+	}
+
+	potential = { always = no }
+
+	planet_modifier = {
+		district_farming_max = -15
+	}
+}
+
+d_zah_ruins_2 = {
+	time = 700
+
+	is_for_colonizable = yes
+	icon = d_deep_sinkhole
+	category = deposit_cat_blockers
+
+	can_be_cleared = {
+		custom_tooltip = {
+			fail_text = has_ranger_lodge
+			planet = {
+				NOT = { has_building = building_ranger_lodge }
+			}
+		}
+	}
+
+	resources = {
+		category = deposit_blockers_natural
+		cost = {
+			energy = 3000
+			minerals = 3000
+			sr_living_metal = 25
+		}
+	}
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = -15
+		planet_housing_add = -20
+	}
+}
+
+d_wormseed_food_100 = {
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	resources = {
+		produces = {
+			food = 100
+		}
+	}
+
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+
+d_wormseed_minerals_100 = {
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	resources = {
+		produces = {
+			minerals = 100
+		}
+	}
+
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}
+
+d_wormseed = {
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	resources = {
+		produces = {
+			alloys = 5
+			sr_living_metal = 1
+			nanites = 1
+		}
+	}
+
+	potential = { always = no }
+	drop_weight = { weight = 0 }
+}

@@ -1,0 +1,50 @@
+#Tooltips will be generated from these rules when they fail. Use of custom_tooltip is recommended
+#There are still multiple hard-coded rules that apply in addition to these.
+#If rules here evaluate to true, there might still be other rules that make the action unavailable.
+#If a rule here evaluates to false the action will become unavailable
+
+#Root = target country
+#This = country
+#Vanilla overwritten.
+can_be_part_of_galactic_community = {
+	custom_tooltip = {
+		fail_text = "community_default_failtext"
+		is_country_type = default
+	}
+	custom_tooltip = {
+		fail_text = "community_homicidal_failtext"
+		NOR = {
+			has_civic = civic_fanatic_purifiers
+			has_civic = civic_hive_devouring_swarm
+			has_civic = civic_machine_terminator
+		}
+	}
+	custom_tooltip = {
+		fail_text = "community_shadows_failtext"
+		NOR = {
+			has_civic = civic_shadows1
+		}
+	}
+	custom_tooltip = {
+		fail_text = "community_declared_crisis_failtext"
+		has_been_declared_crisis = no
+	}
+	custom_tooltip = {
+		fail_text = "community_declared_crisis_failtext"
+		#fail_text = "community_overlord_declared_crisis_failtext"
+		OR = {
+			NOT = { exists = overlord }
+			overlord = { has_been_declared_crisis = no }
+		}
+	}
+}
+
+#can_be_part_of_galactic_council = {
+#	is_country_type = default
+#	NOR = {
+#		has_civic = civic_fanatic_purifiers
+#		has_civic = civic_hive_devouring_swarm
+#		has_civic = civic_machine_terminator
+#		has_civic = civic_shadows1
+#	}
+#}

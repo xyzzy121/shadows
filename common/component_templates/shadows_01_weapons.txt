@@ -1,0 +1,1438 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes.
+
+# Updated Range on these
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+# Small
+
+@sha_s_t1_cost = 20
+@sha_s_t2_cost = 26
+@sha_s_t3_cost = 34
+@sha_s_t4_cost = 34 #not 22, uses rare goods instead
+@sha_s_t5_cost = 44 
+@sha_s_t6_cost = 58 
+@sha_s_t7_cost = 76 
+
+@sha_s_t1_upkeep_energy = 0.20
+@sha_s_t1_upkeep_alloys = 0.040
+@sha_s_t2_upkeep_energy = 0.26
+@sha_s_t2_upkeep_alloys = 0.052
+@sha_s_t3_upkeep_energy = 0.34
+@sha_s_t3_upkeep_alloys = 0.068
+@sha_s_t4_upkeep_energy = 0.34
+@sha_s_t4_upkeep_alloys = 0.068
+@sha_s_t5_upkeep_energy = 0.44
+@sha_s_t5_upkeep_alloys = 0.088
+@sha_s_t6_upkeep_energy = 0.58
+@sha_s_t6_upkeep_alloys = 0.116
+@sha_s_t7_upkeep_energy = 0.76
+@sha_s_t7_upkeep_alloys = 0.152
+
+# Medium
+
+@sha_m_t1_cost = 40
+@sha_m_t2_cost = 52
+@sha_m_t3_cost = 68
+@sha_m_t4_cost = 68 #not 44, uses rare goods instead
+@sha_m_t5_cost = 88 #57
+@sha_m_t6_cost = 114 #74
+@sha_m_t7_cost = 148 #98
+
+@sha_m_t1_upkeep_energy = 0.40
+@sha_m_t1_upkeep_alloys = 0.080
+@sha_m_t2_upkeep_energy = 0.52
+@sha_m_t2_upkeep_alloys = 0.104
+@sha_m_t3_upkeep_energy = 0.68
+@sha_m_t3_upkeep_alloys = 0.136
+@sha_m_t4_upkeep_energy = 0.68
+@sha_m_t4_upkeep_alloys = 0.136
+@sha_m_t5_upkeep_energy = 0.88
+@sha_m_t5_upkeep_alloys = 0.176
+@sha_m_t6_upkeep_energy = 1.14
+@sha_m_t6_upkeep_alloys = 0.208
+@sha_m_t7_upkeep_energy = 1.48
+@sha_m_t7_upkeep_alloys = 0.296
+
+# Large
+
+@sha_l_t1_cost = 80
+@sha_l_t2_cost = 104
+@sha_l_t3_cost = 136
+@sha_l_t4_cost = 136 #not 88, uses rare goods instead
+@sha_l_t5_cost = 176 #114
+@sha_l_t6_cost = 228 #148
+@sha_l_t7_cost = 296 #192
+
+@sha_l_t1_upkeep_energy = 0.60
+@sha_l_t1_upkeep_alloys = 0.160
+@sha_l_t2_upkeep_energy = 1.04
+@sha_l_t2_upkeep_alloys = 0.208
+@sha_l_t3_upkeep_energy = 1.36
+@sha_l_t3_upkeep_alloys = 0.272
+@sha_l_t4_upkeep_energy = 1.36
+@sha_l_t4_upkeep_alloys = 0.272
+@sha_l_t5_upkeep_energy = 1.76
+@sha_l_t5_upkeep_alloys = 0.392
+@sha_l_t6_upkeep_energy = 2.28
+@sha_l_t6_upkeep_alloys = 0.456
+@sha_l_t7_upkeep_energy = 2.96
+@sha_l_t7_upkeep_alloys = 0.592
+
+# Extra Large
+
+@sha_xl_t5_cost = 352 #not 232, uses rare goods instead
+@sha_xl_t6_cost = 458 #298
+@sha_xl_t7_cost = 592 #387
+
+@sha_xl_t5_upkeep_energy = 3.52
+@sha_xl_t5_upkeep_alloys = 0.704
+@sha_xl_t6_upkeep_energy = 4.58
+@sha_xl_t6_upkeep_alloys = 0.916
+@sha_xl_t7_upkeep_energy = 5.96
+@sha_xl_t7_upkeep_alloys = 1.12
+
+# Titanic
+
+@sha_titanic_t6_cost = 912 #593
+@sha_titanic_t7_cost = 1186 #771
+
+@sha_titanic_t6_upkeep_energy = 9.12
+@sha_titanic_t6_upkeep_alloys = 1.8
+@sha_titanic_t7_upkeep_energy = 11.86
+@sha_titanic_t7_upkeep_alloys = 2.372
+
+
+
+#NOTE that values from weapon_components.csv will override values from this file
+@laser_hull_damage = 1.5
+@laser_armor_damage = 1.5
+@laser_armor_penetration = 0.0
+@laser_shield_damage = 0.25
+@laser_shield_penetration = 0.25
+@laser_m_shield_penetration = 0.35
+@laser_l_shield_penetration = 0.45
+@range_s_laser = 50
+@range_m_laser = 70
+@range_l_laser = 90
+
+@lance_hull_damage = 1.75
+@lance_armor_damage = 1.75
+@lance_armor_penetration = 0.0
+@lance_shield_damage = 0.25
+@lance_shield_penetration = 0.50
+
+# ####################
+# Shadow weapons
+# ####################
+
+##################
+# Shadow Plasma Missile
+#################
+
+weapon_component_template = {
+	key = SHADOW_PLASMA_MISSILE_1
+	size = torpedo
+	icon = GFX_ship_part_shadow_plasma_missile_1
+	icon_frame = 1
+	type = missile
+
+	damage = { min = 200 max = 300 }
+	windup = { min = 5 max = 10 }
+	total_fire_time = 100
+	range = 150
+	accuracy = 1.0
+	missile_speed = 400
+	missile_evasion = 0.1
+	missile_health = 16
+	missile_retarget_range = 150
+	power = -20
+
+	firing_arc = 25.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+		}
+		upkeep = {
+			energy = @sha_s_t1_upkeep_energy
+			alloys = @sha_s_t1_upkeep_alloys
+		}
+	}
+
+	hull_damage = 1.25
+	armor_damage = 1.25
+	armor_penetration = 0
+	shield_damage = 2
+	shield_penetration = 0
+	tracking = 0.25
+	size_damage_factor = 1.0
+
+	upgrades_to = "SHADOW_PLASMA_MISSILE_2"
+
+	prerequisites = { "tech_shadow_missile_1" }
+	component_set = "SHADOW_PLASMA_MISSILE_1"
+	projectile_gfx = "small_shadow_plasma_missile_1"
+	tags = { weapon_type_explosive weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+		
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+}
+
+weapon_component_template = {
+	key = SHADOW_PLASMA_MISSILE_2
+	size = torpedo
+	icon = GFX_ship_part_shadow_plasma_missile_2
+	icon_frame = 1
+	type = missile
+
+	damage = { min = 300 max = 400 }
+	windup = { min = 5 max = 10 }
+	total_fire_time = 100
+	range = 150
+	accuracy = 1.0
+	missile_speed = 400
+	missile_evasion = 0.1
+	missile_health = 16
+	missile_retarget_range = 150
+	power = -20
+
+	firing_arc = 25.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 62
+		}
+		upkeep = {
+			energy = @sha_s_t1_upkeep_energy
+			alloys = @sha_s_t1_upkeep_alloys
+		}
+	}
+
+	hull_damage = 1.25
+	armor_damage = 1.25
+	armor_penetration = 0
+	shield_damage = 2
+	shield_penetration = 0
+	tracking = 0.25
+	size_damage_factor = 1.0
+
+	upgrades_to = "SHADOW_PLASMA_MISSILE_3"
+	
+	prerequisites = { "tech_shadow_missile_2" }
+	component_set = "SHADOW_PLASMA_MISSILE_2"
+	projectile_gfx = "small_shadow_plasma_missile_1"
+	tags = { weapon_type_explosive weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+		
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+}
+
+weapon_component_template = {
+	key = SHADOW_PLASMA_MISSILE_3
+	size = torpedo
+	icon = GFX_ship_part_shadow_plasma_missile_3
+	icon_frame = 1
+	type = missile
+
+	damage = { min = 400 max = 600 }
+	windup = { min = 5 max = 10 }
+	total_fire_time = 100
+	range = 150
+	accuracy = 1.0
+	missile_speed = 400
+	missile_evasion = 0.1
+	missile_health = 16
+	missile_retarget_range = 150
+	power = -20
+
+	firing_arc = 25.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 90
+		}
+		upkeep = {
+			energy = @sha_s_t1_upkeep_energy
+			alloys = @sha_s_t1_upkeep_alloys
+		}
+	}
+
+	hull_damage = 1.25
+	armor_damage = 1.25
+	armor_penetration = 0
+	shield_damage = 2
+	shield_penetration = 0
+	tracking = 0.25
+	size_damage_factor = 1.0
+
+	prerequisites = { "tech_shadow_missile_3" }
+	component_set = "SHADOW_PLASMA_MISSILE_3"
+	projectile_gfx = "small_shadow_plasma_missile_1"
+	tags = { weapon_type_explosive weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+		
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+}
+
+### Shadow Lasers
+weapon_component_template = {
+	key = "SMALL_SHADOW_LASER"
+	size = small
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 20 max = 40 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_s_laser
+	accuracy = 1
+	power = -10
+
+	upgrades_to = "SMALL_SHADOWT2_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t1_cost
+		}
+		upkeep = {
+			energy = @sha_s_t1_upkeep_energy
+			alloys = @sha_s_t1_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.5
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_1" }
+	component_set = "SHADOW_LASER"
+	projectile_gfx = "shadow_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_SHADOW_LASER"
+	size = medium
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 38 max = 88 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_m_laser
+	accuracy = 1
+	power = -20
+
+	upgrades_to = "MEDIUM_SHADOWT2_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t1_cost
+		}
+		upkeep = {
+			energy = @sha_m_t1_upkeep_energy
+			alloys = @sha_m_t1_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_m_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.3
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_1" }
+	component_set = "SHADOW_LASER"
+	projectile_gfx = "shadow_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_SHADOW_LASER"
+	size = large
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 80 max = 200 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_l_laser
+	accuracy = 1
+	power = -40
+
+	upgrades_to = "LARGE_SHADOWT2_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t1_cost
+		}
+		upkeep = {
+			energy = @sha_l_t1_upkeep_energy
+			alloys = @sha_l_t1_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_l_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.05
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_1" }
+	component_set = "SHADOW_LASER"
+	projectile_gfx = "shadow_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+### Shadow Lasers T2
+weapon_component_template = {
+	key = "SMALL_SHADOWT2_LASER"
+	size = small
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 26 max = 50 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_s_laser
+	accuracy = 1
+	power = -14
+
+	upgrades_to = "SMALL_SHADOWT3_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t2_cost
+		}
+		upkeep = {
+			energy = @sha_s_t2_upkeep_energy
+			alloys = @sha_s_t2_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.5
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_2" }
+	component_set = "SHADOWT2_LASER"
+	projectile_gfx = "shadow_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_SHADOWT2_LASER"
+	size = medium
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 48 max = 114 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_m_laser
+	accuracy = 1
+	power = -26
+
+	upgrades_to = "MEDIUM_SHADOWT3_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t2_cost
+		}
+		upkeep = {
+			energy = @sha_m_t2_upkeep_energy
+			alloys = @sha_m_t2_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_m_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.3
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_2" }
+	component_set = "SHADOWT2_LASER"
+	projectile_gfx = "shadow_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_SHADOWT2_LASER"
+	size = large
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 104 max = 260 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_l_laser
+	accuracy = 1
+	power = -52
+
+	upgrades_to = "LARGE_SHADOWT3_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t2_cost
+		}
+		upkeep = {
+			energy = @sha_l_t2_upkeep_energy
+			alloys = @sha_l_t2_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_l_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.05
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_2" }
+	component_set = "SHADOWT2_LASER"
+	projectile_gfx = "shadow_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+### Shadow Lasers T3
+weapon_component_template = {
+	key = "SMALL_SHADOWT3_LASER"
+	size = small
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 30 max = 62 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_s_laser
+	accuracy = 1
+	power = -34
+
+	upgrades_to = "SMALL_SHADOWT4_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t3_cost
+		}
+		upkeep = {
+			energy = @sha_s_t3_upkeep_energy
+			alloys = @sha_s_t3_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.5
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_3" }
+	component_set = "SHADOWT3_LASER"
+	projectile_gfx = "shadow_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_SHADOWT3_LASER"
+	size = medium
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 58 max = 144 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_m_laser
+	accuracy = 1
+	power = -20
+
+	upgrades_to = "MEDIUM_SHADOWT4_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t3_cost
+		}
+		upkeep = {
+			energy = @sha_m_t3_upkeep_energy
+			alloys = @sha_m_t3_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_m_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.3
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_3" }
+	component_set = "SHADOWT3_LASER"
+	projectile_gfx = "shadow_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_SHADOWT3_LASER"
+	size = large
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 128 max = 332 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_l_laser
+	accuracy = 1
+	power = -40
+
+	upgrades_to = "LARGE_SHADOWT4_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t3_cost
+		}
+		upkeep = {
+			energy = @sha_l_t3_upkeep_energy
+			alloys = @sha_l_t3_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_l_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.05
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_3" }
+	component_set = "SHADOWT3_LASER"
+	projectile_gfx = "shadow_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+### Shadow Lasers T4
+weapon_component_template = {
+	key = "SMALL_SHADOWT4_LASER"
+	size = small
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 36 max = 78 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_s_laser
+	accuracy = 1
+	power = -34
+
+	upgrades_to = "SMALL_SHADOWT5_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t4_cost
+		}
+		upkeep = {
+			energy = @sha_s_t4_upkeep_energy
+			alloys = @sha_s_t4_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.5
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_4" }
+	component_set = "SHADOWT4_LASER"
+	projectile_gfx = "shadow_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_SHADOWT4_LASER"
+	size = medium
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 74 max = 184 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_m_laser
+	accuracy = 1
+	power = -20
+
+	upgrades_to = "MEDIUM_SHADOWT5_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t4_cost
+		}
+		upkeep = {
+			energy = @sha_m_t4_upkeep_energy
+			alloys = @sha_m_t4_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_m_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.3
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_4" }
+	component_set = "SHADOWT4_LASER"
+	projectile_gfx = "shadow_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_SHADOWT4_LASER"
+	size = large
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 164 max = 428 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_l_laser
+	accuracy = 1
+	power = -40
+
+	upgrades_to = "LARGE_SHADOWT5_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t4_cost
+		}
+		upkeep = {
+			energy = @sha_l_t4_upkeep_energy
+			alloys = @sha_l_t4_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_l_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.05
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_4" }
+	component_set = "SHADOWT4_LASER"
+	projectile_gfx = "shadow_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+### Shadow Lasers T5
+weapon_component_template = {
+	key = "SMALL_SHADOWT5_LASER"
+	size = small
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 44 max = 100 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_s_laser
+	accuracy = 1
+	power = -34
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t5_cost
+		}
+		upkeep = {
+			energy = @sha_s_t5_upkeep_energy
+			alloys = @sha_s_t5_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.5
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_5" }
+	component_set = "SHADOWT5_LASER"
+	projectile_gfx = "shadow_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_SHADOWT5_LASER"
+	size = medium
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 94 max = 238 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_m_laser
+	accuracy = 1
+	power = -20
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t5_cost
+		}
+		upkeep = {
+			energy = @sha_m_t5_upkeep_energy
+			alloys = @sha_m_t5_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_m_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.3
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_5" }
+	component_set = "SHADOWT5_LASER"
+	projectile_gfx = "shadow_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_SHADOWT5_LASER"
+	size = large
+	type = instant
+	icon = "GFX_ship_part_shadow_laser_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	damage = { min = 212 max = 550 }
+	windup = { min = 2 max = 20 }
+	total_fire_time = 35
+	range = @range_l_laser
+	accuracy = 1
+	power = -40
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t5_cost
+		}
+		upkeep = {
+			energy = @sha_l_t5_upkeep_energy
+			alloys = @sha_l_t5_upkeep_alloys
+		}
+	}
+
+	hull_damage = @laser_hull_damage
+	armor_penetration = @laser_armor_penetration
+	armor_damage = @laser_armor_damage
+	shield_penetration = @laser_l_shield_penetration
+	shield_damage = @laser_shield_damage
+	tracking = 0.05
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+	
+	prerequisites = { "tech_shadow_lasers_5" }
+	component_set = "SHADOWT5_LASER"
+	projectile_gfx = "shadow_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+# ## Shadow Lance 1
+weapon_component_template = {
+	key = "SHADOW_LANCE_1"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_ship_part_shadow_lance_1"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	min_range = 0
+	use_ship_kill_target = no
+
+	damage = { min = 1400 max = 3200 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 70
+	range = 150
+	accuracy = 1
+	power = -400
+
+	prerequisites = { "tech_shadow_lance_1" }
+	component_set = "SHADOW_LANCE_1"
+	projectile_gfx = "shadow_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "SHADOW_LANCE_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_xl_t5_cost
+			rare_crystals = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @sha_xl_t5_upkeep_energy
+			alloys = @sha_xl_t5_upkeep_alloys
+		}
+	}
+	
+	hull_damage = @lance_hull_damage
+	armor_penetration = @lance_armor_penetration
+	armor_damage = @lance_armor_damage
+	shield_penetration = @lance_shield_penetration
+	shield_damage = @lance_shield_damage
+	tracking = 0
+
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+# ## Shadow Lance 2
+weapon_component_template = {
+	key = "SHADOW_LANCE_2"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_ship_part_shadow_lance_2"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	min_range = 0
+	use_ship_kill_target = no
+	
+	damage = { min = 1800 max = 4200 }
+	windup = { min = 1 max = 19 }
+	total_fire_time = 70
+	range = 150
+	accuracy = 1
+	power = -500
+
+	prerequisites = { "tech_shadow_lance_2" }
+	component_set = "SHADOW_LANCE_2"
+	projectile_gfx = "shadow_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_xl_t6_cost
+			rare_crystals = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @sha_xl_t6_upkeep_energy
+			alloys = @sha_xl_t6_upkeep_alloys
+		}
+	}
+	
+	hull_damage = @lance_hull_damage
+	armor_penetration = @lance_armor_penetration
+	armor_damage = @lance_armor_damage
+	shield_penetration = @lance_shield_penetration
+	shield_damage = @lance_shield_damage
+	tracking = 0
+
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+# ####################
+# Shadow Titan Laser
+# ####################
+
+# ## Shadow Perdition Beam
+weapon_component_template = {
+	key = "SHADOW_PERDITION_BEAM_TITAN"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+
+	icon = "GFX_ship_part_shadow_perdition_beam"
+	icon_frame = 1
+
+	firing_arc = 10.0
+	min_range = 0
+	use_ship_kill_target = no
+	
+	damage = { min = 10000 max = 20000 }
+	windup = { min = 30 max = 45 }
+	total_fire_time = 180
+	range = 300
+	accuracy = 1
+	power = -500
+	hull_damage = 2
+	armor_damage = 2
+	shield_damage = 0.25
+	shield_penetration = 1
+	tracking = 1
+	
+	tags = { weapon_type_energy }
+
+	prerequisites = { "tech_titans" }
+	component_set = "SHADOW_PERDITION_BEAM"
+	projectile_gfx = "shadow_perdition_beam"
+	size_restriction = { titan }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_titanic_t6_cost
+			rare_crystals = @titanic_t6_rare
+		}
+		upkeep = {
+			energy = @sha_titanic_t6_upkeep_energy
+			alloys = @sha_titanic_t6_upkeep_alloys
+		}
+	}
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+# ## Shadow Perdition Beam
+weapon_component_template = {
+	key = "SHADOW_PERDITION_BEAM_ION"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+
+	icon = "GFX_ship_part_shadow_perdition_beam"
+	icon_frame = 1
+
+	firing_arc = 10.0
+	min_range = 0
+	use_ship_kill_target = no
+
+	tags = { weapon_type_energy }
+	
+	damage = { min = 10000 max = 20000 }
+	windup = { min = 30 max = 45 }
+	total_fire_time = 180
+	range = 300
+	accuracy = 1
+	power = 0
+	hull_damage = 2
+	armor_damage = 2
+	shield_damage = 0.25
+	shield_penetration = 1
+	tracking = 1
+	
+	prerequisites = { "tech_titans" }
+	component_set = "SHADOW_PERDITION_BEAM"
+	projectile_gfx = "ion_cannon"
+	size_restriction = { ion_cannon }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_titanic_t6_cost
+			rare_crystals = @titanic_t6_rare
+		}
+		upkeep = {
+			energy = @sha_titanic_t6_upkeep_energy
+			alloys = @sha_titanic_t6_upkeep_alloys
+		}
+	}
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+# ## Shadow Titan Lance
+weapon_component_template = {
+	key = "TITAN_SHADOW_LASER"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+
+	hidden = yes
+
+	icon = "GFX_ship_part_shadow_energy_lance_2"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	min_range = 0
+	use_ship_kill_target = no
+	
+	damage = { min = 10000 max = 20000 }
+	windup = { min = 30 max = 45 }
+	total_fire_time = 180
+	range = 250
+	accuracy = 1
+	power = -500
+	hull_damage = 2
+	armor_damage = 2
+	shield_damage = 0.25
+	shield_penetration = 0.75
+
+	tags = { weapon_type_energy }
+
+	component_set = "SHADOW_TITAN_LASER"
+	projectile_gfx = "shadow_titan_laser"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_titanic_t6_cost
+			rare_crystals = @titanic_t6_rare
+		}
+		upkeep = {
+			energy = @sha_titanic_t6_upkeep_energy
+			alloys = @sha_titanic_t6_upkeep_alloys
+		}
+	}
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	
+	ai_weight = {
+		weight = 2
+	}
+}

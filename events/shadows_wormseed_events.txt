@@ -1,0 +1,89 @@
+
+### SHADOWS EVENTS
+
+namespace = shadows_wormseed
+
+#Wormseed
+planet_event = {
+	id = shadows_wormseed.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		habitable_structure = no
+		owner = {
+		has_origin = origin_shadows
+		}
+		NOR = {
+			habitable_structure = yes
+			has_modifier = sha_wormseed_stage_1
+			has_modifier = sha_wormseed_stage_2
+		}
+		OR = {
+			habitability = {
+				who = owner.species
+				value < 1
+			}
+			is_wet = yes
+			is_dry = yes
+			is_cold = yes
+		}
+	}
+
+	immediate = {
+		#clear_deposits = yes
+		set_planet_entity = {
+					entity = wormseed_planet_01_stage_1_entity
+		}
+		add_modifier = {
+			modifier = sha_wormseed_stage_1
+			days = 3600
+		}
+		add_deposit = d_wormseed_food_100
+		## call a planetary event to make it grow of change stage
+		planet_event = { id = shadows_wormseed.2 days = 3601 }
+	}
+}
+	
+planet_event = {
+	id = shadows_wormseed.2
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		remove_modifier = sha_wormseed_stage_1
+		remove_deposit = d_wormseed_food_100
+		add_deposit = d_wormseed_minerals_100
+			set_planet_entity = {
+					entity = wormseed_planet_01_stage_2_entity
+				}
+			add_modifier = {
+				modifier = sha_wormseed_stage_2
+				days = 3600
+			}			
+			## call a planetary event to make it grow of change stage
+			planet_event = { id = shadows_wormseed.3 days = 3601 }
+				
+			
+	}
+}
+planet_event = {
+	id = shadows_wormseed.3
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+			remove_modifier = sha_wormseed_stage_1
+			remove_modifier = sha_wormseed_stage_2
+		    remove_deposit = d_wormseed_minerals_100
+		if = {
+			limit = {
+			}
+			destroy_colony = yes
+			change_pc = pc_wormseed
+		}
+		set_deposit = d_wormseed
+	}
+}

@@ -1,0 +1,2050 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes.
+
+@cost1 = 3
+@cost2 = 6
+@cost3 = 9
+@cost4 = 12
+@cost5 = 15
+
+@power_1 = -10
+@power_2 = -15
+@power_3 = -20
+@power_4 = -25
+@power_5 = -30
+
+@power1 = -10
+@power2 = -15
+@power3 = -20
+@power4 = -30
+
+@destroyer_power_1 = -20
+@destroyer_power_2 = -30
+@destroyer_power_3 = -40
+@destroyer_power_4 = -50
+@destroyer_power_5 = -60
+
+@cruiser_power_1 = -40
+@cruiser_power_2 = -60
+@cruiser_power_3 = -80
+@cruiser_power_4 = -100
+@cruiser_power_5 = -120
+
+@battleship_power_1 = -80
+@battleship_power_2 = -120
+@battleship_power_3 = -160
+@battleship_power_4 = -200
+@battleship_power_5 = -240
+
+@titan_power_1 = -160
+@titan_power_2 = -240
+@titan_power_3 = -320
+@titan_power_4 = -400
+@titan_power_5 = -480
+
+@colossus_power_1 = -200
+@colossus_power_2 = -300
+@colossus_power_3 = -400
+@colossus_power_4 = -500
+@colossus_power_5 = -600
+
+@destroyer_cost1 = 6
+@destroyer_cost2 = 12
+@destroyer_cost3 = 18
+@destroyer_cost4 = 24
+@destroyer_cost5 = 30
+
+@cruiser_cost1 = 12
+@cruiser_cost2 = 24
+@cruiser_cost3 = 36
+@cruiser_cost4 = 48
+@cruiser_cost5 = 60
+
+@battleship_cost1 = 24
+@battleship_cost2 = 48
+@battleship_cost3 = 72
+@battleship_cost4 = 96
+@battleship_cost5 = 120
+
+@titan_cost1 = 48
+@titan_cost2 = 96
+@titan_cost3 = 144
+@titan_cost4 = 192
+@titan_cost5 = 240
+
+@colossus_cost1 = 60
+@colossus_cost2 = 120
+@colossus_cost3 = 180
+@colossus_cost4 = 240
+@colossus_cost5 = 300
+
+# Small
+
+@sha_s_t1_cost = 20
+@sha_s_t2_cost = 26
+@sha_s_t3_cost = 34
+@sha_s_t4_cost = 34 #not 22, uses rare goods instead
+@sha_s_t5_cost = 44 #29
+@sha_s_t6_cost = 58 #38
+@sha_s_t7_cost = 76 #49
+
+@sha_s_t1_upkeep_energy = 0.20
+@sha_s_t1_upkeep_alloys = 0.040
+@sha_s_t2_upkeep_energy = 0.26
+@sha_s_t2_upkeep_alloys = 0.052
+@sha_s_t3_upkeep_energy = 0.34
+@sha_s_t3_upkeep_alloys = 0.068
+@sha_s_t4_upkeep_energy = 0.34
+@sha_s_t4_upkeep_alloys = 0.068
+@sha_s_t5_upkeep_energy = 0.44
+@sha_s_t5_upkeep_alloys = 0.088
+@sha_s_t6_upkeep_energy = 0.58
+@sha_s_t6_upkeep_alloys = 0.116
+@sha_s_t7_upkeep_energy = 0.76
+@sha_s_t7_upkeep_alloys = 0.152
+
+# Medium
+
+@sha_m_t1_cost = 40
+@sha_m_t2_cost = 52
+@sha_m_t3_cost = 68
+@sha_m_t4_cost = 68 #not 44, uses rare goods instead
+@sha_m_t5_cost = 88 #57
+@sha_m_t6_cost = 114 #74
+@sha_m_t7_cost = 148 #98
+
+@sha_m_t1_upkeep_energy = 0.40
+@sha_m_t1_upkeep_alloys = 0.080
+@sha_m_t2_upkeep_energy = 0.52
+@sha_m_t2_upkeep_alloys = 0.104
+@sha_m_t3_upkeep_energy = 0.68
+@sha_m_t3_upkeep_alloys = 0.136
+@sha_m_t4_upkeep_energy = 0.68
+@sha_m_t4_upkeep_alloys = 0.136
+@sha_m_t5_upkeep_energy = 0.88
+@sha_m_t5_upkeep_alloys = 0.176
+@sha_m_t6_upkeep_energy = 1.14
+@sha_m_t6_upkeep_alloys = 0.208
+@sha_m_t7_upkeep_energy = 1.48
+@sha_m_t7_upkeep_alloys = 0.296
+
+# Large
+
+@sha_l_t1_cost = 80
+@sha_l_t2_cost = 104
+@sha_l_t3_cost = 136
+@sha_l_t4_cost = 136 #not 88, uses rare goods instead
+@sha_l_t5_cost = 176 #114
+@sha_l_t6_cost = 228 #148
+@sha_l_t7_cost = 296 #192
+
+@sha_l_t1_upkeep_energy = 0.80
+@sha_l_t1_upkeep_alloys = 0.160
+@sha_l_t2_upkeep_energy = 1.04
+@sha_l_t2_upkeep_alloys = 0.208
+@sha_l_t3_upkeep_energy = 1.36
+@sha_l_t3_upkeep_alloys = 0.272
+@sha_l_t4_upkeep_energy = 1.36
+@sha_l_t4_upkeep_alloys = 0.272
+@sha_l_t5_upkeep_energy = 1.96
+@sha_l_t5_upkeep_alloys = 0.392
+@sha_l_t6_upkeep_energy = 2.28
+@sha_l_t6_upkeep_alloys = 0.456
+@sha_l_t7_upkeep_energy = 2.96
+@sha_l_t7_upkeep_alloys = 0.592
+
+#############
+#	ARMOR	#
+#############
+
+@sha_armor_1S = 100
+@sha_armor_1M = 250
+@sha_armor_1L = 600
+
+@sha_armor_2S = 130
+@sha_armor_2M = 320
+@sha_armor_2L = 780
+
+@sha_armor_3S = 170
+@sha_armor_3M = 430
+@sha_armor_3L = 1020
+
+@sha_armor_4S = 220
+@sha_armor_4M = 550
+@sha_armor_4L = 1320
+
+@sha_armor_5S = 290
+@sha_armor_5M = 730
+@sha_armor_5L = 1740
+
+@sha_armor_6S = 370
+@sha_armor_6M = 930
+@sha_armor_6L = 2220
+
+#############
+# UTILITIES #
+#############
+
+# Plasteel Armor
+utility_component_template = {
+	key = "SMALL_SHADOW_ARMOR_1"
+	size = small
+	icon = "GFX_ship_part_shadow_armor_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_1S
+		ship_hull_add = @sha_armor_1S
+		
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_1" }
+	component_set = "SHADOW_ARMOR_1"
+	upgrades_to = "SMALL_SHADOW_ARMOR_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t1_cost
+			food = @sha_s_t1_cost
+		}
+		upkeep = {
+			energy = @sha_s_t1_upkeep_energy
+			alloys = @sha_s_t1_upkeep_alloys
+			food = @sha_s_t1_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHADOW_ARMOR_1"
+	size = medium
+	icon = "GFX_ship_part_shadow_armor_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_1M
+		ship_hull_add = @sha_armor_1M
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_1" }
+	component_set = "SHADOW_ARMOR_1"
+	upgrades_to = "MEDIUM_SHADOW_ARMOR_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t1_cost
+			food = @sha_m_t1_cost
+		}
+		upkeep = {
+			energy = @sha_m_t1_upkeep_energy
+			alloys = @sha_m_t1_upkeep_alloys
+			food = @sha_m_t1_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHADOW_ARMOR_1"
+	size = large
+	icon = "GFX_ship_part_shadow_armor_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_1L
+		ship_hull_add = @sha_armor_1L
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_1" }
+	component_set = "SHADOW_ARMOR_1"
+	upgrades_to = "LARGE_SHADOW_ARMOR_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t1_cost
+			food = @sha_l_t1_cost
+		}
+		upkeep = {
+			energy = @sha_l_t1_upkeep_energy
+			alloys = @sha_l_t1_upkeep_alloys
+			food = @sha_l_t1_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+# Durasteel Armor
+utility_component_template = {
+	key = "SMALL_SHADOW_ARMOR_2"
+	size = small
+	icon = "GFX_ship_part_shadow_armor_2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_2S
+		ship_hull_add = @sha_armor_2S		
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_2" }
+	component_set = "SHADOW_ARMOR_2"
+	upgrades_to = "SMALL_SHADOW_ARMOR_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t2_cost
+			food = @sha_s_t2_cost
+		}
+		upkeep = {
+			energy = @sha_s_t2_upkeep_energy
+			alloys = @sha_s_t2_upkeep_alloys
+			food = @sha_s_t2_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHADOW_ARMOR_2"
+	size = medium
+	icon = "GFX_ship_part_shadow_armor_2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_2M
+		ship_hull_add = @sha_armor_2M	
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_2" }
+	component_set = "SHADOW_ARMOR_2"
+	upgrades_to = "MEDIUM_SHADOW_ARMOR_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t2_cost
+			food = @sha_m_t2_cost
+		}
+		upkeep = {
+			energy = @sha_m_t2_upkeep_energy
+			alloys = @sha_m_t2_upkeep_alloys
+			food = @sha_m_t2_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHADOW_ARMOR_2"
+	size = large
+	icon = "GFX_ship_part_shadow_armor_2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_2L
+		ship_hull_add = @sha_armor_2L
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_2" }
+	component_set = "SHADOW_ARMOR_2"
+	upgrades_to = "LARGE_SHADOW_ARMOR_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t2_cost
+			food = @sha_l_t2_cost
+		}
+		upkeep = {
+			energy = @sha_l_t2_upkeep_energy
+			alloys = @sha_l_t2_upkeep_alloys
+			food = @sha_l_t2_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+# Ceramo-Metal Armor
+utility_component_template = {
+	key = "SMALL_SHADOW_ARMOR_3"
+	size = small
+	icon = "GFX_ship_part_shadow_armor_3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_3S
+		ship_hull_add = @sha_armor_3S
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_3" }
+	component_set = "SHADOW_ARMOR_3"
+	upgrades_to = "SMALL_SHADOW_ARMOR_4"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t3_cost
+			food = @sha_s_t3_cost
+		}
+		upkeep = {
+			energy = @sha_s_t3_upkeep_energy
+			alloys = @sha_s_t3_upkeep_alloys
+			food = @sha_s_t3_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHADOW_ARMOR_3"
+	size = medium
+	icon = "GFX_ship_part_shadow_armor_3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_3M
+		ship_hull_add = @sha_armor_3M
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_3" }
+	component_set = "SHADOW_ARMOR_3"
+	upgrades_to = "MEDIUM_SHADOW_ARMOR_4"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t3_cost
+			food = @sha_m_t3_cost
+		}
+		upkeep = {
+			energy = @sha_m_t3_upkeep_energy
+			alloys = @sha_m_t3_upkeep_alloys
+			food = @sha_m_t3_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHADOW_ARMOR_3"
+	size = large
+	icon = "GFX_ship_part_shadow_armor_3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_3L
+		ship_hull_add = @sha_armor_3L
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_3" }
+	component_set = "SHADOW_ARMOR_3"
+	upgrades_to = "LARGE_SHADOW_ARMOR_4"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t3_cost
+			food = @sha_l_t3_cost
+		}
+		upkeep = {
+			energy = @sha_l_t3_upkeep_energy
+			alloys = @sha_l_t3_upkeep_alloys
+			food = @sha_l_t3_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+# Nanocomposite Armor
+utility_component_template = {
+	key = "SMALL_SHADOW_ARMOR_4"
+	size = small
+	icon = "GFX_ship_part_shadow_armor_4"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_4S
+		ship_hull_add = @sha_armor_4S
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_4" }
+	component_set = "SHADOW_ARMOR_4"
+	upgrades_to = "SMALL_SHADOW_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t4_cost
+			food = @sha_s_t4_cost
+		}
+		upkeep = {
+			energy = @sha_s_t4_upkeep_energy
+			alloys = @sha_s_t4_upkeep_alloys
+			food = @sha_s_t4_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHADOW_ARMOR_4"
+	size = medium
+	icon = "GFX_ship_part_shadow_armor_4"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_4M
+		ship_hull_add = @sha_armor_4M
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_4" }
+	component_set = "SHADOW_ARMOR_4"
+	upgrades_to = "MEDIUM_SHADOW_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t4_cost
+			food = @sha_m_t4_cost
+		}
+		upkeep = {
+			energy = @sha_m_t4_upkeep_energy
+			alloys = @sha_m_t4_upkeep_alloys
+			food = @sha_m_t4_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHADOW_ARMOR_4"
+	size = large
+	icon = "GFX_ship_part_shadow_armor_4"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_4L
+		ship_hull_add = @sha_armor_4L
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_4" }
+	component_set = "SHADOW_ARMOR_4"
+	upgrades_to = "LARGE_SHADOW_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t4_cost
+			food = @sha_l_t4_cost
+		}
+		upkeep = {
+			energy = @sha_l_t4_upkeep_energy
+			alloys = @sha_l_t4_upkeep_alloys
+			food = @sha_l_t4_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+# Neutronium Armor
+utility_component_template = {
+	key = "SMALL_SHADOW_ARMOR_5"
+	size = small
+	icon = "GFX_ship_part_shadow_armor_5"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_5S
+		ship_hull_add = @sha_armor_5S
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_5" }
+	component_set = "SHADOW_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_s_t5_cost
+			food = @sha_s_t5_cost
+		}
+		upkeep = {
+			energy = @sha_s_t5_upkeep_energy
+			alloys = @sha_s_t5_upkeep_alloys
+			food = @sha_s_t5_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHADOW_ARMOR_5"
+	size = medium
+	icon = "GFX_ship_part_shadow_armor_5"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_5M
+		ship_hull_add = @sha_armor_5M
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_5" }
+	component_set = "SHADOW_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_m_t5_cost
+			food = @sha_m_t5_cost
+		}
+		upkeep = {
+			energy = @sha_m_t5_upkeep_energy
+			alloys = @sha_m_t5_upkeep_alloys
+			food = @sha_m_t5_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHADOW_ARMOR_5"
+	size = large
+	icon = "GFX_ship_part_shadow_armor_5"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @sha_armor_5L
+		ship_hull_add = @sha_armor_5L
+	}
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	prerequisites = { "tech_ship_shadow_armor_5" }
+	component_set = "SHADOW_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @sha_l_t5_cost
+			food = @sha_l_t5_cost
+		}
+		upkeep = {
+			energy = @sha_l_t5_upkeep_energy
+			alloys = @sha_l_t5_upkeep_alloys
+			food = @sha_l_t5_upkeep_alloys
+		}
+	}
+		
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 10.0
+		}
+	}
+}
+
+#############################
+# Regenerative Hull Tissue #
+#############################
+
+utility_component_template = {
+	key = "AUTO_SHADOW_REPAIR_01"
+	size = aux
+	icon = "GFX_ship_part_shadow_auto_repair_1"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5
+			food = 5
+		}
+	}
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_perc = 0.1
+		ship_armor_regen_add_perc = 0.1
+	}
+
+	prerequisites = { tech_regenerative_shadow_hull_01 }
+	component_set = "AUTO_SHADOW_REPAIR_01"
+	upgrades_to = "AUTO_SHADOW_REPAIR_02"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 5.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AUTO_SHADOW_REPAIR_02"
+	size = aux
+	icon = "GFX_ship_part_shadow_auto_repair_2"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			food = 10
+		}
+	}
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_perc = 0.3
+		ship_armor_regen_add_perc = 0.3
+	}
+
+	prerequisites = { tech_regenerative_shadow_hull_02 }
+	component_set = "AUTO_SHADOW_REPAIR_02"
+	upgrades_to = "AUTO_SHADOW_REPAIR_03"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 5.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AUTO_SHADOW_REPAIR_03"
+	size = aux
+	icon = "GFX_ship_part_shadow_auto_repair_3"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+			food = 15			
+		}
+	}
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.5
+	}
+
+	prerequisites = { tech_regenerative_shadow_hull_03 }
+	component_set = "AUTO_SHADOW_REPAIR_03"
+	upgrades_to = "AUTO_SHADOW_REPAIR_04"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 5.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AUTO_SHADOW_REPAIR_04"
+	size = aux
+	icon = "GFX_ship_part_shadow_auto_repair_4"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			food = 20			
+		}
+	}
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_perc = 0.7
+		ship_armor_regen_add_perc = 0.7
+	}
+
+	prerequisites = { tech_regenerative_shadow_hull_04 }
+	component_set = "AUTO_SHADOW_REPAIR_04"
+	upgrades_to = "AUTO_SHADOW_REPAIR_05"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 5.0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AUTO_SHADOW_REPAIR_05"
+	size = aux
+	icon = "GFX_ship_part_shadow_auto_repair_5"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+			food = 25
+		}
+	}
+	
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_perc = 1
+		ship_armor_regen_add_perc = 1
+	}
+
+	prerequisites = { tech_regenerative_shadow_hull_05 }
+	component_set = "AUTO_SHADOW_REPAIR_05"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 5.0
+		}
+	}
+}
+
+#############
+# THRUSTERS #
+#############
+
+### 1
+
+utility_component_template = {
+	key = "SHIP_SHADOW_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_1"
+	icon_frame = 1
+	power = @power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+
+	modifier = {
+				ship_base_speed_mult = 0.25
+				ship_evasion_add = 5
+	}
+
+	prerequisites = { "tech_shadow_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette}
+	upgrades_to = "SHIP_SHADOW_THRUSTER_2"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHIP_SHADOW_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_1"
+	icon_frame = 1
+	power = @destroyer_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost1
+		}
+	}
+
+	modifier = {
+				ship_base_speed_mult = 0.25
+				ship_evasion_add = 4
+	}
+
+	prerequisites = { "tech_shadow_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	upgrades_to = "DESTROYER_SHIP_SHADOW_THRUSTER_2"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHIP_SHADOW_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_1"
+	icon_frame = 1
+	power = @cruiser_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost1
+		}
+	}
+
+	modifier = {
+				ship_base_speed_mult = 0.25
+				ship_evasion_add = 3	
+	}
+
+	prerequisites = { "tech_shadow_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	upgrades_to = "CRUISER_SHIP_SHADOW_THRUSTER_2"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHIP_SHADOW_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_1"
+	icon_frame = 1
+	power = @battleship_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost1
+		}
+	}
+
+	modifier = {
+				ship_base_speed_mult = 0.25
+				ship_evasion_add = 2
+	}
+
+	prerequisites = { "tech_shadow_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { battleship offspring_battleship }
+	upgrades_to = "BATTLESHIP_SHIP_SHADOW_THRUSTER_2"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHIP_SHADOW_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_1"
+	icon_frame = 1
+	power = @titan_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost1
+		}
+	}
+
+	modifier = {
+				ship_base_speed_mult = 0.25
+				ship_evasion_add = 1
+	}
+
+	prerequisites = { "tech_shadow_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_SHIP_SHADOW_THRUSTER_2"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_SHIP_SHADOW_THRUSTER_1"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_1"
+	icon_frame = 1
+	power = @colossus_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @colossus_cost1
+		}
+	}
+
+	modifier = {
+			ship_base_speed_mult = 0.25
+	}
+
+	prerequisites = { "tech_shadow_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { colossus juggernaut star_eater }
+	upgrades_to = "COLOSSUS_SHIP_SHADOW_THRUSTER_2"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+### 2
+
+utility_component_template = {
+	key = "SHIP_SHADOW_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_2"
+	icon_frame = 1
+	power = @power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.5
+		ship_evasion_add = 10
+	}
+
+	prerequisites = { "tech_shadow_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+	upgrades_to = "SHIP_SHADOW_THRUSTER_3"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 20
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHIP_SHADOW_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_2"
+	icon_frame = 1
+	power = @destroyer_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost2
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = 0.5
+		ship_evasion_add = 8
+	}
+
+	prerequisites = { "tech_shadow_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	upgrades_to = "DESTROYER_SHIP_SHADOW_THRUSTER_3"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 20
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHIP_SHADOW_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_2"
+	icon_frame = 1
+	power = @cruiser_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost2
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = 0.5
+		ship_evasion_add = 6
+	}
+
+	prerequisites = { "tech_shadow_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	upgrades_to = "CRUISER_SHIP_SHADOW_THRUSTER_3"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 20
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHIP_SHADOW_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_2"
+	icon_frame = 1
+	power = @battleship_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost2
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = 0.5
+		ship_evasion_add = 4
+	}
+
+	prerequisites = { "tech_shadow_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { battleship offspring_battleship }
+	upgrades_to = "BATTLESHIP_SHIP_SHADOW_THRUSTER_3"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 20
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHIP_SHADOW_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_2"
+	icon_frame = 1
+	power = @titan_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost2
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = 0.5
+		ship_evasion_add = 2
+	}
+
+	prerequisites = { "tech_shadow_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_SHIP_SHADOW_THRUSTER_3"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 20
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_SHIP_SHADOW_THRUSTER_2"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_2"
+	icon_frame = 1
+	power = @colossus_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @colossus_cost2
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = 0.5
+	}
+
+	prerequisites = { "tech_shadow_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { colossus juggernaut star_eater }
+	upgrades_to = "COLOSSUS_SHIP_SHADOW_THRUSTER_3"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 20
+	}
+}
+
+
+### 3
+
+utility_component_template = {
+	key = "SHIP_SHADOW_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_3"
+	icon_frame = 1
+	power = @power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1
+		ship_evasion_add = 20
+	}
+
+	prerequisites = { "tech_shadow_thrusters_3" }
+	component_set = "thruster_components"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+	upgrades_to = "SHIP_SHADOW_THRUSTER_4"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 30
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHIP_SHADOW_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_3"
+	icon_frame = 1
+	power = @destroyer_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1
+		ship_evasion_add = 16
+	}
+
+	prerequisites = { "tech_shadow_thrusters_3" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	upgrades_to = "DESTROYER_SHIP_SHADOW_THRUSTER_4"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 30
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHIP_SHADOW_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_3"
+	icon_frame = 1
+	power = @cruiser_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1
+		ship_evasion_add = 12
+	}
+
+	prerequisites = { "tech_shadow_thrusters_3" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	upgrades_to = "CRUISER_SHIP_SHADOW_THRUSTER_4"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 30
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHIP_SHADOW_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_3"
+	icon_frame = 1
+	power = @battleship_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1
+		ship_evasion_add = 8
+	}
+
+	prerequisites = { "tech_shadow_thrusters_3" }
+	component_set = "thruster_components"
+	size_restriction = { battleship offspring_battleship }
+	upgrades_to = "BATTLESHIP_SHIP_SHADOW_THRUSTER_4"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 30
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHIP_SHADOW_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_3"
+	icon_frame = 1
+	power = @titan_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1
+		ship_evasion_add = 4
+	}
+
+	prerequisites = { "tech_shadow_thrusters_3" }
+	component_set = "thruster_components"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_SHIP_SHADOW_THRUSTER_4"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 30
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_SHIP_SHADOW_THRUSTER_3"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_3"
+	icon_frame = 1
+	power = @colossus_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @colossus_cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1
+	}
+
+	prerequisites = { "tech_shadow_thrusters_3" }
+	component_set = "thruster_components"
+	size_restriction = { colossus juggernaut star_eater }
+	upgrades_to = "COLOSSUS_SHIP_SHADOW_THRUSTER_4"
+
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 30
+	}
+}
+
+### 4
+
+utility_component_template = {
+	key = "SHIP_SHADOW_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_4"
+	icon_frame = 1
+	power = @power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 30
+	}
+
+	prerequisites = { "tech_shadow_thrusters_4" }
+	component_set = "thruster_components"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+	upgrades_to = "SHIP_SHADOW_THRUSTER_5"
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 40
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHIP_SHADOW_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_4"
+	icon_frame = 1
+	power = @destroyer_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 24
+	}
+
+	prerequisites = { "tech_shadow_thrusters_4" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	upgrades_to = "DESTROYER_SHIP_SHADOW_THRUSTER_5"
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 40
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHIP_SHADOW_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_4"
+	icon_frame = 1
+	power = @cruiser_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.8
+		ship_evasion_add = 18
+	}
+
+	prerequisites = { "tech_shadow_thrusters_4" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+	upgrades_to = "CRUISER_SHIP_SHADOW_THRUSTER_5"
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 40
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHIP_SHADOW_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_4"
+	icon_frame = 1
+	power = @battleship_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 12
+	}
+
+	prerequisites = { "tech_shadow_thrusters_4" }
+	component_set = "thruster_components"
+	size_restriction = { battleship offspring_battleship }
+	upgrades_to = "BATTLESHIP_SHIP_SHADOW_THRUSTER_5"
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 40
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHIP_SHADOW_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_4"
+	icon_frame = 1
+	power = @titan_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 6
+	}
+
+	prerequisites = { "tech_shadow_thrusters_4" }
+	component_set = "thruster_components"
+	size_restriction = { titan }
+	upgrades_to = "TITAN_SHIP_SHADOW_THRUSTER_5"
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 40
+	}
+}
+
+
+utility_component_template = {
+	key = "COLOSSUS_SHIP_SHADOW_THRUSTER_4"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_4"
+	icon_frame = 1
+	power = @colossus_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @colossus_cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+	}
+
+	prerequisites = { "tech_shadow_thrusters_4" }
+	component_set = "thruster_components"
+	size_restriction = { colossus juggernaut star_eater }
+	upgrades_to = "COLOSSUS_SHIP_SHADOW_THRUSTER_5"
+
+	valid_for_country = {
+	    OR = {
+		has_origin = origin_shadows
+		}
+	}
+
+	ai_weight = {
+		weight = 40
+	}
+}
+
+### 5
+
+utility_component_template = {
+	key = "SHIP_SHADOW_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_5"
+	icon_frame = 1
+	power = @power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+			sr_dark_matter = 1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+		ship_evasion_add = 35
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHIP_SHADOW_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_5"
+	icon_frame = 1
+	power = @destroyer_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost4
+			sr_dark_matter = 2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+		ship_evasion_add = 29
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHIP_SHADOW_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_5"
+	icon_frame = 1
+	power = @cruiser_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost4
+			sr_dark_matter = 4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 2
+		ship_evasion_add = 22
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHIP_SHADOW_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_5"
+	icon_frame = 1
+	power = @battleship_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost4
+			sr_dark_matter = 8
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+		ship_evasion_add = 16
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { battleship offspring_battleship }
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHIP_SHADOW_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_5"
+	icon_frame = 1
+	power = @titan_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost4
+			sr_dark_matter = 16
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+		ship_evasion_add = 8
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { titan }
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "COLOSSUS_SHIP_SHADOW_THRUSTER_5"
+	size = small
+	icon = "GFX_ship_part_shadow_thruster_5"
+	icon_frame = 1
+	power = @colossus_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @colossus_cost5
+			sr_dark_matter = 32
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+	}
+			
+	valid_for_country = {
+	    has_origin = origin_shadows
+	}
+	
+	prerequisites = { "tech_dark_matter_propulsion" }
+	component_set = "thruster_components"
+	size_restriction = { colossus juggernaut star_eater }
+
+	ai_weight = {
+		weight = 5
+
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}

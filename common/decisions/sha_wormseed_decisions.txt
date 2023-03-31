@@ -1,0 +1,54 @@
+
+decision_worm_seed = {
+	owned_planets_only = yes
+	sound = event_laboratory_sound
+	icon = decision_wormseed_world
+
+	enactment_time = 120
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 5000
+			minerals = 5000
+		}
+	}
+
+	potential = {
+		owner = {
+			has_origin = origin_shadows
+			has_tradition = tr_shadows_way_finish
+			NOT = { has_modifier = sha_country_wormseed_stage_1 }
+		}
+		NOR = {
+			habitable_structure = yes
+			has_modifier = sha_wormseed_stage_1
+			has_modifier = sha_wormseed_stage_2		
+		}
+		OR = {
+			habitability = {
+				who = owner.species
+				value < 1
+			}
+			is_wet = yes
+			is_dry = yes
+			is_cold = yes
+		}
+	}
+
+	allow = {
+			NOT = { is_planet_class = pc_zah }
+			NOT = { is_planet_class = pc_nuked }
+	}
+	
+	effect = {
+		custom_tooltip = decision_worm_seed_effects
+		hidden_effect = {
+			planet_event = { id = shadows_wormseed.1 }			
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

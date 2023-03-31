@@ -1,0 +1,35 @@
+##########PLACEHOLDERS####################
+##########PLACEHOLDERS####################
+
+##########WEAPONS FIRE & HIT & DEATH############
+
+##### CLOSE
+
+sound =
+{
+	name = "shadow_beam"
+	file = "weapons/shadow_beam.wav"
+	volume = 0.8
+}
+sound =
+{
+	name = "shadow_beam_hit"
+	file = "weapons/shadow_beam_hit.wav"
+	volume = 0.8
+}
+
+##### Events
+
+sound =
+{
+	name = "shadow_birth"
+	file = "event/shadow_birth.wav"
+	volume = 0.5
+}
+sound = 
+{
+	name = "shadow_select_fleet"
+	file = "units/shadow_select_fleet.wav"
+	always_load = no
+	volume = 0.35
+}

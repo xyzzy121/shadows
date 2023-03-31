@@ -1,0 +1,44 @@
+##########################################################################
+# HARD FIXED STATE - DO NOT REMOVE OR RENAME ANY OF THESE
+##########################################################################
+
+#triggered_opinion_both_hive_mind_shadows = {
+#	trigger = {
+#		has_authority = auth_hive_mind
+#		FROM = {
+#			has_valid_civic = "civic_shadows1"
+#		}
+#	}
+#
+#	opinion = {
+#		base = -30
+#	}
+#}
+
+opinion_of_shadows = {
+	trigger = {
+		has_valid_civic = "civic_shadows1"
+	}
+	opinion = {
+		modifier = {
+			add = -200
+			FROM = { has_ethic = "ethic_fanatic_pacifist" }
+		}
+		modifier = {
+			add = -100
+			FROM = { has_ethic = "ethic_pacifist" }
+		}
+		modifier = {
+			add = -30
+			FROM = { has_authority = auth_hive_mind }
+		}
+		modifier = {
+			add = 50
+			FROM = { has_ethic = "ethic_militarist" }
+		}
+		modifier = {
+			add = 100
+			FROM = { has_ethic = "ethic_fanatic_militarist" }
+		}
+	}
+}

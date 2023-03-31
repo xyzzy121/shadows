@@ -1,0 +1,24 @@
+
+### ORIGINS EXTENDED GFX
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_shadows_origin_01"
+		texturefile = "gfx/event_pictures/origins/shadows_origin_01.dds"
+		alwaystransparent = yes
+	}	
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_evt_ancient_ship_1"
+		texturefile = "gfx/event_pictures/ancient_ship_1.dds"
+		alwaystransparent = yes
+	}	
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_evt_ancient_ship_2"
+		texturefile = "gfx/event_pictures/ancient_ship_2.dds"
+		alwaystransparent = yes
+	}	
+}

@@ -1,0 +1,184 @@
+
+### SHADOWS ORIGINS GAME START EVENTS
+
+namespace = shadows_game_start
+
+# this: capital planet
+# from: founder species
+planet_event = {
+	id = shadows_game_start.1001
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					has_origin = origin_shadows
+				}
+			}
+			shadows_generate_home_world  = yes # see scripted_effects
+		}
+		
+	}
+}
+
+#country_event = {
+#	id = shadows_game_start.1002
+#	is_triggered_only = yes
+#	hide_window = yes
+#
+#	trigger = {
+#		has_origin = origin_shadows
+#	}
+#
+#	immediate = {
+#		if = {
+#			limit = {
+#				NOR = {
+#					has_authority = auth_hive_mind
+#				}
+#				has_origin = origin_shadows
+#			}
+#			force_add_civic = civic_catalytic_processing
+#		}
+#		if = {
+#			limit = {
+#				has_origin = origin_shadows
+#			    has_authority = auth_hive_mind
+#			}
+#			force_add_civic = civic_hive_catalytic_processing
+#		}
+#	}
+#}
+
+country_event = {
+	id = shadows_game_start.1003
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+			if = {
+			limit = {
+				owner = {
+					has_origin = origin_shadows
+					is_ai = no
+				}
+			}
+			give_technology = { tech = "tech_mine_living_metal" message = no }
+			set_global_flag = baol_started
+			set_country_flag = starting_event
+		    add_resource = { sentm = 300	}
+			set_policy = {
+				policy = border_policy
+				option = border_policy_closed
+				cooldown = no
+			}
+		    add_modifier = {
+			modifier = shadows_modifier_shadows_not_at_war
+		    }
+		}
+	}
+
+	# Additional resources that may be changed by subspecies are granted in generate_start_buildings_and_districts
+}
+
+#Add Ship at the start (not in use)
+country_event = { 
+	id = shadows_game_start.1004
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					has_origin = origin_shadows
+				}
+			}
+		create_fleet = {
+		name = "Ancient Shadow Ship"
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = "Ancient Shadow Ship"
+					design = "NAME_ShadowCrab"
+				}
+				set_location = root.capital_star
+				set_fleet_stance = aggressive
+			 }
+		  } 
+		}
+	}
+}
+
+
+# On Game Start Countdown
+country_event = {
+	id = shadows_game_start.1005
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	    has_origin = origin_shadows
+	}
+
+	immediate = {
+		country_event = { id = shadows_game_start.1006 days = 2400 random = 30 }
+	}
+}
+
+# Ancient Ship Project Prompt
+country_event = {
+	id = shadows_game_start.1006
+	title = "ancientship.01.name"
+	desc = "ancientship.01.desc"
+	picture = GFX_evt_ancient_ship_1
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	option = {
+		name = "ancientship.01.a"
+		enable_special_project = { name = "SHADOW_ANCIENT_SHIP_PROJECT" }
+	}
+	option = {
+		name = "ancientship.01.b"
+		add_resource = { engineering_research = 1000 }
+	}
+}
+
+# Create Ancient Ship
+country_event = { 
+	id = shadows_game_start.1007
+	title = "ancientship.02.name"
+	desc = "ancientship.02.desc"
+	picture = GFX_evt_ancient_ship_2
+	show_sound = shadow_birth
+	is_triggered_only = yes
+	
+	immediate = {
+		create_leader = {
+			class = admiral
+			sub_type = random
+			name = random
+			species = owner.species
+		}
+		create_fleet = {
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = "Ancient Shadow Ship"
+					design = "NAME_ShadowCrab"
+				}
+				set_location = root.capital_star
+				set_leader = last_created_leader
+				set_fleet_stance = aggressive
+			}
+		}
+	}
+
+	option = {
+		name = "EXCELLENT"
+	}
+}

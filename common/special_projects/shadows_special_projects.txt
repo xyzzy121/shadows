@@ -1,0 +1,26 @@
+special_project = {
+	key = "WORMSEED_ACTIVATION_PROJECT"
+	days_to_research = 180
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_ship.dds"
+	picture = GFX_evt_big_landing_ship
+	requirements = {
+	}	
+	event_scope = country_event
+
+}
+
+
+special_project = {
+	key = "SHADOW_ANCIENT_SHIP_PROJECT"
+	days_to_research = 700
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_ship.dds"
+	picture = GFX_evt_big_landing_ship
+	
+	event_scope = country_event
+
+	on_success = {
+		country_event = { id = shadows_game_start.1007 }
+	}
+}
