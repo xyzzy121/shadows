@@ -795,8 +795,8 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
-		ship_evasion_add = 20
+		ship_base_speed_mult = 999
+		ship_evasion_add = 200
 	}
 	
 
@@ -806,7 +806,7 @@ utility_component_template = {
 	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette offspring_corvette }
 
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -832,8 +832,8 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
-		ship_evasion_add = 16
+		ship_base_speed_mult = 20
+		ship_evasion_add = 160
 	}
 	
 
@@ -843,7 +843,7 @@ utility_component_template = {
 	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
 
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -869,8 +869,8 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
-		ship_evasion_add = 12
+		ship_base_speed_mult = 12.5
+		ship_evasion_add = 120
 	}
 	
 
@@ -880,7 +880,7 @@ utility_component_template = {
 	size_restriction = { cruiser crisis_cruiser offspring_cruiser }
 
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -906,8 +906,8 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
-		ship_evasion_add = 8
+		ship_base_speed_mult = 20
+		ship_evasion_add = 80
 	}
 	
 
@@ -917,7 +917,7 @@ utility_component_template = {
 	size_restriction = { battleship offspring_battleship }
 
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -943,8 +943,8 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
-		ship_evasion_add = 4
+		ship_base_speed_mult = 20
+		ship_evasion_add = 40
 	}
 	
 
@@ -954,7 +954,7 @@ utility_component_template = {
 	size_restriction = { titan }
 
 	ai_weight = {
-		weight = 5
+		weight = 0
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = sr_dark_matter }
@@ -981,7 +981,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
-		ship_base_speed_mult = 1.25
+		ship_base_speed_mult = 20
 	}
 	
 
@@ -991,7 +991,7 @@ utility_component_template = {
 	size_restriction = { colossus juggernaut star_eater }
 
 	ai_weight = {
-		weight = 5
+		weight = 0
 
 		modifier = {
 			factor = 0.0

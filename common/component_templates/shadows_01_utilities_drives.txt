@@ -141,12 +141,12 @@ utility_component_template = {
 	jumpdrive = yes
 	ship_modifier = {
 		ship_windup_mult = -1
-		ship_ftl_jumpdrive_range_mult = 0.5		
+		ship_ftl_jumpdrive_range_mult = 99		
 		ship_disengage_opportunities_add = 3
 	}
 
 	ai_weight = {
-		weight = 30
+		weight = 0
 	}
 
 	valid_for_country = {

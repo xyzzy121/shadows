@@ -84,7 +84,7 @@ wormseed_ring = {
 	# root = system
 	# from = country
 	ai_weight = {
-		factor = 5
+		factor = 0
 
 		modifier = {
 			factor = 0

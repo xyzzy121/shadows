@@ -421,7 +421,7 @@
  SHADOW_HYPER_DRIVE_3:0 "Hyperspatial Slip T3"
  SHADOW_HYPER_DRIVE_3_DESC:0 "$SHADOW_HYPER_DRIVE_1_DESC$" 
  SHADOW_HYPER_DRIVE_4:0 "Hyperspatial Slip T4"
- SHADOW_HYPER_DRIVE_4_DESC:0 "$SHADOW_HYPER_DRIVE_1_DESC$" 
+ SHADOW_HYPER_DRIVE_4_DESC:0 "The Shadows have imbued their ships with ability to phase between different dimensions. Something they innately posses themselves. Their mastery of this technique has become a corner stone of their technology. A Shadow ship doesn't so much open a hole to hyperspace like a conventional vessel. It's engineered to exist partially within both. Just enough that it can will itself between real space or back to hyper within seconds. Though the strain does prevent repeating the process for at least a couple of minutes. Or at least, that would be the case if this wasn't the pinnacle of Shadow engineering." 
  
  SHADOW_THRUSTER_1:0 "Molecular Instability Drive"
  SHADOW_THRUSTER_1_DESC:0 "Unlike the younger races, the Shadows and their nemesis have developed unique drive technologies. Shadow vessels use their many protrusions to emanate a field that creates disturbances an an atomic scale. Breaking down electrons and releasing energy. Each arm can control these reactions to great precision allowing incredibly precise maneuvers. The system can be focused to create a far more deadly effect, creating what is known as their Molecular Cutting Beam."
@@ -432,7 +432,7 @@
  SHADOW_THRUSTER_4:0 "Molecular Instability Drive T4"
  SHADOW_THRUSTER_4_DESC:0 "$SHADOW_THRUSTER_1_DESC$"
  SHADOW_THRUSTER_5:0 "Molecular Instability Drive T5"
- SHADOW_THRUSTER_5_DESC:0 "$SHADOW_THRUSTER_1_DESC$"
+ SHADOW_THRUSTER_5_DESC:0 "Unlike the younger races, the Shadows and their nemesis have developed unique drive technologies. Shadow vessels use their many protrusions to emanate a field that creates disturbances an an atomic scale. Breaking down electrons and releasing energy. Each arm can control these reactions to great precision allowing incredibly precise maneuvers. The system can be focused to create a far more deadly effect, creating what is known as their Molecular Cutting Beam. However, Shadow technology breaks so many laws of physics and logic that even if We were to hand it to a lesser race, they could not use it."
  SHIP_SHADOW_THRUSTER_1:0 "Molecular Instability Drive"
  SHIP_SHADOW_THRUSTER_1_DESC:0 "$SHADOW_THRUSTER_1_DESC$" 
  SHIP_SHADOW_THRUSTER_2:0 "Molecular Instability Drive T2"

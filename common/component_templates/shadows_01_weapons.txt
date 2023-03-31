@@ -266,16 +266,16 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 
-	damage = { min = 400 max = 600 }
+	damage = { min = 1000 max = 10000 }
 	windup = { min = 5 max = 10 }
 	total_fire_time = 100
-	range = 150
+	range = 15000
 	accuracy = 1.0
 	missile_speed = 400
 	missile_evasion = 0.1
-	missile_health = 16
+	missile_health = 16000
 	missile_retarget_range = 150
-	power = -20
+	power = -200000
 
 	firing_arc = 25.0
 
@@ -290,12 +290,12 @@ weapon_component_template = {
 		}
 	}
 
-	hull_damage = 1.25
-	armor_damage = 1.25
-	armor_penetration = 0
+	hull_damage = 2
+	armor_damage = 2
+	armor_penetration = 2
 	shield_damage = 2
-	shield_penetration = 0
-	tracking = 0.25
+	shield_penetration = 2
+	tracking = 2
 	size_damage_factor = 1.0
 
 	prerequisites = { "tech_shadow_missile_3" }
@@ -305,7 +305,7 @@ weapon_component_template = {
 	ai_tags = { weapon_role_artillery }
 
 	ai_weight = {
-		weight = 1
+		weight = 0
 		### AI shouldn't use this component if it can't afford at least some upgrades right away
 		modifier = {
 			factor = 10.0
@@ -991,12 +991,12 @@ weapon_component_template = {
 	icon_frame = 1
 
 	firing_arc = 25.0
-	damage = { min = 44 max = 100 }
+	damage = { min = 440 max = 1000 }
 	windup = { min = 2 max = 20 }
 	total_fire_time = 35
 	range = @range_s_laser
-	accuracy = 1
-	power = -34
+	accuracy = 2
+	power = -340
 
 	resources = {
 		category = ship_components
@@ -1014,7 +1014,7 @@ weapon_component_template = {
 	armor_damage = @laser_armor_damage
 	shield_penetration = @laser_shield_penetration
 	shield_damage = @laser_shield_damage
-	tracking = 0.5
+	tracking = 3
 	
 	valid_for_country = {
 	    OR = {
@@ -1029,7 +1029,7 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
 		
 	ai_weight = {
-		weight = 1
+		weight = 0
 		### AI shouldn't use this component if it can't afford at least some upgrades right away
 		modifier = {
 			factor = 10.0
@@ -1045,12 +1045,12 @@ weapon_component_template = {
 	icon_frame = 1
 
 	firing_arc = 25.0
-	damage = { min = 94 max = 238 }
+	damage = { min = 940 max = 2380 }
 	windup = { min = 2 max = 20 }
 	total_fire_time = 35
 	range = @range_m_laser
-	accuracy = 1
-	power = -20
+	accuracy = 4
+	power = -200
 
 	resources = {
 		category = ship_components
@@ -1068,7 +1068,7 @@ weapon_component_template = {
 	armor_damage = @laser_armor_damage
 	shield_penetration = @laser_m_shield_penetration
 	shield_damage = @laser_shield_damage
-	tracking = 0.3
+	tracking = 4
 	
 	valid_for_country = {
 	    OR = {
@@ -1086,7 +1086,7 @@ weapon_component_template = {
 		weight = 1
 		### AI shouldn't use this component if it can't afford at least some upgrades right away
 		modifier = {
-			factor = 10.0
+			factor = 0
 		}
 	}
 }
@@ -1099,12 +1099,12 @@ weapon_component_template = {
 	icon_frame = 1
 
 	firing_arc = 25.0
-	damage = { min = 212 max = 550 }
+	damage = { min = 2120 max = 5500 }
 	windup = { min = 2 max = 20 }
 	total_fire_time = 35
 	range = @range_l_laser
-	accuracy = 1
-	power = -40
+	accuracy = 3
+	power = -400
 
 	resources = {
 		category = ship_components
@@ -1122,7 +1122,7 @@ weapon_component_template = {
 	armor_damage = @laser_armor_damage
 	shield_penetration = @laser_l_shield_penetration
 	shield_damage = @laser_shield_damage
-	tracking = 0.05
+	tracking = 4
 	
 	valid_for_country = {
 	    OR = {
@@ -1137,7 +1137,7 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
 		
 	ai_weight = {
-		weight = 1
+		weight = 0
 		### AI shouldn't use this component if it can't afford at least some upgrades right away
 		modifier = {
 			factor = 10.0
@@ -1216,9 +1216,9 @@ weapon_component_template = {
 	damage = { min = 1800 max = 4200 }
 	windup = { min = 1 max = 19 }
 	total_fire_time = 70
-	range = 150
-	accuracy = 1
-	power = -500
+	range = 15000
+	accuracy = 3
+	power = -5000
 
 	prerequisites = { "tech_shadow_lance_2" }
 	component_set = "SHADOW_LANCE_2"
@@ -1238,15 +1238,15 @@ weapon_component_template = {
 		}
 	}
 	
-	hull_damage = @lance_hull_damage
-	armor_penetration = @lance_armor_penetration
-	armor_damage = @lance_armor_damage
-	shield_penetration = @lance_shield_penetration
-	shield_damage = @lance_shield_damage
-	tracking = 0
+	hull_damage = 2
+	armor_penetration = 2
+	armor_damage = 2
+	shield_penetration = 2
+	shield_damage = 2
+	tracking = 3
 
 	ai_weight = {
-		weight = 1
+		weight = 0
 		### AI shouldn't use this component if it can't afford at least some upgrades right away
 		modifier = {
 			factor = 10.0
@@ -1275,14 +1275,14 @@ weapon_component_template = {
 	damage = { min = 10000 max = 20000 }
 	windup = { min = 30 max = 45 }
 	total_fire_time = 180
-	range = 300
-	accuracy = 1
-	power = -500
+	range = 30000
+	accuracy = 4
+	power = -5000
 	hull_damage = 2
 	armor_damage = 2
-	shield_damage = 0.25
-	shield_penetration = 1
-	tracking = 1
+	shield_damage = 2
+	shield_penetration = 2
+	tracking = 4
 	
 	tags = { weapon_type_energy }
 
@@ -1314,7 +1314,7 @@ weapon_component_template = {
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 	}
 }
 
@@ -1337,14 +1337,14 @@ weapon_component_template = {
 	damage = { min = 10000 max = 20000 }
 	windup = { min = 30 max = 45 }
 	total_fire_time = 180
-	range = 300
-	accuracy = 1
+	range = 30000
+	accuracy = 4
 	power = 0
 	hull_damage = 2
 	armor_damage = 2
-	shield_damage = 0.25
-	shield_penetration = 1
-	tracking = 1
+	shield_damage = 2
+	shield_penetration = 2
+	tracking = 4
 	
 	prerequisites = { "tech_titans" }
 	component_set = "SHADOW_PERDITION_BEAM"
@@ -1374,7 +1374,7 @@ weapon_component_template = {
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 	}
 }
 
@@ -1397,13 +1397,13 @@ weapon_component_template = {
 	damage = { min = 10000 max = 20000 }
 	windup = { min = 30 max = 45 }
 	total_fire_time = 180
-	range = 250
+	range = 2500
 	accuracy = 1
 	power = -500
 	hull_damage = 2
 	armor_damage = 2
-	shield_damage = 0.25
-	shield_penetration = 0.75
+	shield_damage = 2
+	shield_penetration = 2
 
 	tags = { weapon_type_energy }
 
@@ -1433,6 +1433,6 @@ weapon_component_template = {
 	}
 	
 	ai_weight = {
-		weight = 2
+		weight = 0
 	}
 }
