@@ -5,7 +5,7 @@
 @cost1 = 2
 @cost2 = 4
 @cost3 = 6
-@cost4 = 800000
+@cost4 = 80
 
 @power1 = -5
 @power2 = -10
@@ -140,6 +140,6 @@ utility_component_template = {
 	component_set = "sensor_components"
 
 	ai_weight = {
-		weight = 1000
+		weight = 0
 	}
 }
